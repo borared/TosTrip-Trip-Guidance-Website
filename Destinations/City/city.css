@@ -138,7 +138,7 @@ body {
 
 /* The Letter/Caption Styling */
 .caption-letter {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   position: absolute;
   top: 90%;
   transform: translate(-50%, -50%);
@@ -166,68 +166,52 @@ body {
   transform-origin: left;
 }
 
-.hotelwrapper {
-  width: 100%;
-  height: 70vh;
-  margin-top: 150px;
+.hotelwrapper{
+    width: 100%;
+    height: 70vh;
+    margin-top: 150px;
 }
-.hotel {
-  display: flex;
-  width: 100%;
-  height: 500px;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  position: relative;
-  margin-top: 25px;
+.hotel{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px
 }
-.hotelpre {
-  flex: 2;
-  overflow: hidden;
+.hotelpre{
+    flex: 2;
+    overflow: hidden;
 }
-.hotelDes {
-  flex: 1;
-  padding: 30px;
+.hotelDes{
+    flex: 1;
+    padding: 30px;
 }
-.hotelText {
-  width: 100%;
-  height: fit-content;
-  margin-top: 20px;
-  font-size: 20px;
+.hotelText{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px; 
+    font-size: 20px;
 }
-.offer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 35px;
+.offer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
 }
-.offerDes {
-  display: flex;
-  gap: 4px;
-  margin-top: 8px;
+.offerDes{
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
 }
-.Detail {
-  display: flex;
-  justify-content: space-between;
-}
-.DetailBtn button{
-  width: 110px;
-  height: 35px;
-  background-color: black;
-  border: none;
-  color: white;
-  font-size: 18px;
-  font-family: 'Nunito Sans', sans-serif;
-}
-.DetailBtn button:hover{
-  cursor: pointer;
-}
-.UserExp {
+.UserExp{
   display: flex;
   width: 100%;
   height: 500px;
   background-color: white;
   margin-top: 1300px;
 }
-.UserHeadLine {
+.UserHeadLine{
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -235,8 +219,9 @@ body {
   align-items: start;
   padding-left: 50px;
   padding-right: 25px;
+
 }
-.UserImg {
+.UserImg{
   display: flex;
   flex: 1;
   height: 650px;
@@ -253,13 +238,14 @@ body {
   margin-top: -80px;
   margin-right: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
 }
-UerImg img {
+UerImg img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.fullReview {
+.fullReview{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -270,6 +256,9 @@ UerImg img {
   transform: translateY(35px);
   padding-right: 30px;
 }
+
+
+
 
 /* Keyframe Definition */
 @keyframes loadProgress {
