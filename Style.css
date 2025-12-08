@@ -1,0 +1,893 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Rosemartin Custom";
+  src: url("Fonts/Rosemartin.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: black;
+  min-height: auto;
+  overflow-x: hidden;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.Hero {
+  min-height: 100vh;
+}
+/* COMMON NAVBAR LINK STYLES */
+.navbar a,
+.social a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+.navbar a::after,
+.social a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.4s ease, background 0.3s ease;
+}
+.navbar a:hover::after,
+.social a:hover::after,
+.navigation a:hover::after {
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  gap: 20px;
+  background: transparent;
+  transition: top 0.3s ease, background 0.3s ease;
+  z-index: 9999;
+}
+.navbar.hidden {
+  top: -100px;
+}
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+/* SCROLLED STATE: Black text & underline */
+.navbar.scrolled a,
+.navbar.scrolled i,
+.navbar.scrolled .logo a {
+  color: black !important;
+}
+.navbar.scrolled a::after {
+  background: black;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  display: flex;
+  gap: 3px;
+  flex: 1;
+}
+.logo a:hover {
+  cursor: pointer;
+  color: white;
+}
+.navigation {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  flex: 1; /* Keep flex-grow here */
+}
+.Profile_Search {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  gap: 15px;
+  color: white;
+  flex: 1; /* Keep flex-grow here */
+}
+.Profile_Search i:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+}
+.nav-search-bar {
+  position: absolute;
+  right: 60px;
+  top: 46%;
+  transform: translateY(-50%);
+  background: white;
+  border-radius: 50px;
+  height: 38px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  clip-path: inset(0 0 0 100%);
+  transition: clip-path 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.nav-search-bar.active {
+  clip-path: inset(0 0 0 0);
+}
+.nav-search-bar input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  background: transparent;
+}
+.navbar.scrolled .nav-search-bar {
+  background: black;
+}
+.navbar.scrolled .nav-search-bar input {
+  color: white;
+}
+.navbar.scrolled .nav-search-bar .bxr.bx-search-big,
+.navbar.scrolled .nav-search-bar i {
+  color: white !important;
+}
+.navbar.scrolled .bxr.bx-search-big {
+  color: black !important;
+}
+.navbar.scrolled .bxr.bx-search-big.is-active {
+  color: white !important;
+}
+.bxr.bx-search-big {
+  color: rgb(255, 255, 255);
+  transition: color 0.3s ease;
+}
+.navbar:not(.scrolled) .bxr.bx-search-big.is-active {
+  color: black;
+}
+.burger {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.burger input {
+  display: none;
+}
+.burger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  left: 0;
+  transition: 0.25s ease-in-out;
+}
+.burger span:nth-of-type(1) {
+  top: 3px;
+  transform-origin: left center;
+}
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+.burger span:nth-of-type(3) {
+  bottom: 3px;
+  transform-origin: left center;
+}
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: -2px;
+  left: 5px;
+}
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0;
+  opacity: 0;
+}
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 25px; /* Needs adjustment, was 100% - 2px height */
+  left: 5px;
+}
+.burger:hover {
+  opacity: 0.7;
+}
+.Main_Content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92vh;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  margin-right: -35px;
+}
+.Main_Content video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.Main_Content .darker_bg {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+.Main_Content .head_line {
+  position: relative;
+  top: 35%;
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.Main_Content .head_line h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.head_line span {
+  font-family: "Rosemartin Custom";
+  font-weight: 100;
+}
+.Main_Content .bottom_head {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  top: 88%;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 22px;
+  color: white;
+}
+.social {
+  display: flex;
+  gap: 25px;
+}
+.searchWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+}
+.search {
+  margin-top: 80px;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: fit-content;
+}
+.search h1 {
+  font-family: "Rosemartin", sans-serif;
+  font-weight: 500;
+  margin-left: 150px;
+}
+.searchInput {
+  position: relative;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+.searchInput input {
+  width: 735px;
+  height: 50px;
+  padding-left: 50px;
+  border-radius: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+.searchIcon {
+  position: absolute;
+  color: black;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-size: 25px;
+}
+.searchBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e15454;
+  width: 120px;
+  height: 35px;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px; /* Changed from left: 81%; margin-left: 8px; for simplicity */
+  transition: all 0.3s ease-in-out;
+}
+.searchBtn:hover {
+  cursor: pointer;
+  transform: translateY(-50%) scale(0.9);
+}
+.container_Top {
+  width: auto;
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+.header {
+  margin-top: 200px;
+  position: relative;
+  display: flex;
+  
+}
+.header h1 {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+/* Carousel */
+.carousel-container {
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow-x: auto;   /* Allow horizontal scrolling */
+  overflow-y: hidden;
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Hide scrollbar but keep scroll ability */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+.carousel-container:active .carousel-track,
+.carousel-container:focus-within .carousel-track {
+  animation-play-state: paused;
+}
+.carousel-track {
+  display: flex;
+  height: 100%;
+  animation: scrollLeft 80s linear infinite;
+  padding-left: 35px;
+  padding-right: 35px;
+  /* Remove the old margin-left */
+  margin-left: 0;
+}
+.carousel-card {
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-card img {
+  width: 620px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.carousel-card:hover img {
+  transform: scale(1.1);
+}
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.carousel-card:hover .card-overlay {
+  transform: translateY(0);
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-description {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* WARNING: Animation value is hardcoded and must be recalculated. */
+    transform: translateX(
+      calc(
+        ((-280px - 350px - 320px - 300px - 380px - 260px - 340px - 140px) * 3) -
+          60px
+      )
+    );
+  }
+}
+
+/* Subtitle */
+.subtitle-container {
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow: hidden; /* IMPORTANT */
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  height: 60px;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  margin-right: -35px;
+  
+}
+.subtitle-track {
+  display: flex;
+  height: 100%;
+  gap: 30px;
+  align-items: center;
+  animation: scrollRight 40s linear infinite;
+}
+.subtitle-text {
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-family: "Roboto", "Kantumruy Pro", sans-serif;
+}
+@keyframes scrollRight {
+  0% {
+    /* WARNING: Animation value is hardcoded and must be recalculated. */
+    transform: translateX(
+      calc(-280px - 350px - 320px - 300px - 380px - 260px - 340px - 140px)
+    );
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Controls & Info */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.control-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+.control-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+.info-section {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.info-section p {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+.cta-button {
+  background: linear-gradient(to right, #4a90e2, #7b68ee);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(123, 104, 238, 0.4);
+}
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(123, 104, 238, 0.6);
+}
+.carousel-container:hover .carousel-track {
+  animation-play-state: paused;
+}
+.TypeTrip {
+  width: auto;
+  height: auto; /* Increased height to contain both elements */
+  background-color: black;
+  display: flex;
+  flex-direction: column; /* Use column layout */
+  justify-content: space-between; /* Puts space between header and box */
+  align-items: flex-start;
+  margin-top: 100px;
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+}
+
+.TypeTrip h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  top: auto;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 180px;
+}
+/* --- REVISED .box STYLES --- */
+.box {
+  width: 100%;
+  background-color: white;
+  height: 450px;
+  position: relative;
+  left: 0;
+  margin-top: 20px;
+  display: flex; /* Flex container */
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 1. Ensure the video is constrained (remove width/height and flex: 1) */
+.box video {
+  width: 70%; /* Give video a specific, large portion of the container */
+  height: 100%;
+  object-fit: cover; /* Ensures video fills its area without stretching */
+
+}
+
+/* 2. Style the content container and its elements */
+.box div {
+  /* Give the content div the remaining space */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 0 20px;
+}
+
+.box div h1 {
+  position: absolute;
+  top: -1%;
+  font-weight: 500;
+  margin-left: 0; /* Removed the magic number margin-left: 85px; */
+}
+
+.box div a {
+  text-decoration: none;
+  color: white;
+  background-color: #e15454;
+  width: 10%; /* Increased size for a proper button */
+  padding: 10px 20px;
+  border-radius: 35px;
+  margin-top: 15px; /* Add some space below H1 */
+  display: inline-block; /* FIX from previous issue */
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+  transition: all 0.3s ease-in-out;
+}
+.box div a:hover{
+  transform: scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+.box div a:focus{
+  background-color: black;
+}
+.SeeMore{
+  display:flex;
+  justify-content: center; 
+  width: fit-content; 
+  margin-top: 30px; 
+  gap: 1px;
+  transition: all 0.3s ease-in-out;
+}
+.SeeMore:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+.SeeMore img {
+  transition: transform 0.3s ease-in-out;
+}
+.SeeMore:hover img {
+  transform: rotate(45deg);
+  transition: transform 0.3s ease-in-out;
+}
+.seeMoreBtn {
+  font-size: 22px;
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.btText{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 100px;
+  color: white;
+}
+.btText p{
+  font-size: 20px;
+  margin-top: 15px;
+}
+.footer {
+    background-color: #ffffff;
+    height: auto;
+    color: rgb(0, 0, 0);
+    padding: 50px 32px;
+    margin-top: 45px;
+    width: 1520px;
+    margin-left: -35px;
+}
+.footer-logo {
+    display: flex;
+    gap: 5px;
+}
+
+.footer-logo a {
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 0.025em;
+    margin-bottom: 24px;
+    text-decoration: none;
+    color: #000;
+}
+.footer-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    color: #000000;
+}
+
+.footer-divider {
+    border-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 80px;
+    
+}
+
+.footer-divider-bottom {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* ⬅ 4 columns */
+    gap: 32px;
+    color: #000000;
+    margin-bottom: 160px;
+}
+
+.footer-heading {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-link {
+    color: #000000;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.Cookie_Social {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.Cookie_Social a {
+    color: #000000;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1440px) {
+  .Main_Content .head_line h1 {
+    font-size: 4em;
+  }
+  .Main_Content .imgPlane {
+    top: 10%;
+    left: 65%;
+  }
+  .Main_Content .imgPlane img {
+    width: 450px;
+  }
+  .Main_Content .rectangle {
+    left: 78%;
+    margin-left: -4px;
+    height: 400px;
+    width: 320px;
+  }
+}
+@media (max-width: 1100px) {
+  .navigation {
+    gap: 35px;
+  }
+  .Main_Content .head_line h1 {
+    font-size: 3em;
+  }
+  .Main_Content .imgPlane {
+    top: 20%;
+    left: 67%;
+  }
+  .Main_Content .imgPlane img {
+    width: 300px;
+  }
+  .Main_Content .rectangle {
+    height: 300px;
+    top: 25%;
+  }
+}
+@media (max-width: 800px) {
+  .burger {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .Main_Content .bottom_head {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+  .Main_Content .head_line h1 {
+    font-size: 40px;
+    flex-direction: column;
+  }
+  .Main_Content .head_line {
+    top: 10%;
+    left: 1%;
+    position: relative;
+  }
+  .Main_Content .imgPlane {
+    top: 35%;
+    left: 55%;
+  }
+  .Main_Content .imgPlane img {
+    width: 265px;
+  }
+  .Main_Content .rectangle {
+    left: 78%;
+    top: 40%;
+    height: 250px;
+    width: 320px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .carousel-container {
+    height: 350px;
+  }
+  .card-1 {
+    width: 200px;
+  }
+  .card-2 {
+    width: 240px;
+    height: 300px;
+  } /* Added card-2, 3, 4, 5, 6, 7 styles back to fix mobile */
+  .card-3 {
+    width: 220px;
+    height: 260px;
+  }
+  .card-4 {
+    width: 210px;
+    height: 290px;
+  }
+  .card-5 {
+    width: 260px;
+    height: 250px;
+  }
+  .card-6 {
+    width: 190px;
+    height: 280px;
+  }
+  .card-7 {
+    width: 230px;
+    height: 270px;
+  }
+  .subtitle-text {
+    font-size: 0.9rem;
+  }
+  
+
+  /* Mobile Animation Update */
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(-200px - 240px - 220px - 210px - 260px - 190px - 230px - 140px)
+      );
+    }
+  }
+  @keyframes scrollRight {
+    0% {
+      transform: translateX(
+        calc(-200px - 240px - 220px - 210px - 260px - 190px - 230px - 140px)
+      );
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 510px) {
+  .Main_Content .imgPlane {
+    top: 35%;
+    left: 43%;
+  }
+}

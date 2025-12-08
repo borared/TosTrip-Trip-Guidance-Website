@@ -1,0 +1,288 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  padding: 20px;
+  height: auto;
+}
+.outdoor-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+  width: calc(100% + 70px);
+  margin-left: -35px;
+  margin-right: -35px;
+  margin-top: -25px;
+}
+.outdoor-hero-content {
+  width: calc(90% + 70px);
+  position: absolute;
+  top: 85%;
+  left: 3%;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;
+}
+.tour-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 100%;
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+
+.tour-card {
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-placeholder {
+  height: 180px;
+  background-color: #d1d1d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-details {
+  padding: 15px;
+}
+
+.card-details h3 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 5px 0 10px 0;
+  font-weight: bold;
+}
+
+.location {
+  font-size: 12px;
+  color: #6a6a6a;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.price-from {
+  font-size: 16px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* --- CONTAINER STYLES --- */
+.slider-container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+/* The Reel that moves */
+.slider {
+  position: absolute; /* Allows it to fill the padded container */
+  top: 0;
+  left: 0;
+  /* Retain original properties: */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* Individual Slide Styling */
+.slide {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The Letter/Caption Styling */
+.caption-letter {
+  font-family: 'Nunito', sans-serif;
+  position: absolute;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* --- PROGRESS BAR STYLES --- */
+.progress-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: 20;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #007bff; /* Bright blue color */
+  transform-origin: left;
+}
+
+.hotelwrapper{
+    width: 100%;
+    height: 70vh;
+    margin-top: 150px;
+}
+.hotel{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px
+}
+.hotelpre{
+    flex: 2;
+    overflow: hidden;
+}
+.hotelDes{
+    flex: 1;
+    padding: 30px;
+}
+.hotelText{
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px; 
+    font-size: 20px;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.offerDes{
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+.UserExp{
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  margin-top: 1300px;
+}
+.UserHeadLine{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: center;
+  align-items: start;
+  padding-left: 50px;
+  padding-right: 25px;
+
+}
+.UserImg{
+  display: flex;
+  flex: 1;
+  height: 650px;
+  justify-content: center;
+  align-items: center;
+  background-color: #d1d1d1;
+  margin: 20px;
+  font-size: 20px;
+  color: #555;
+  font-weight: bold;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  margin-top: -80px;
+  margin-right: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+UerImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fullReview{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+  margin-top: 15px;
+  transition: all 0.1s ease-in-out;
+  transform: translateY(35px);
+  padding-right: 30px;
+}
+
+
+
+
+/* Keyframe Definition */
+@keyframes loadProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Class applied by JS to start the animation */
+.progress-animate {
+  animation: loadProgress 8s linear forwards;
+}
+
+@media (max-width: 1024px) {
+  .tour-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tour-grid {
+    grid-template-columns: 1fr;
+  }
+}

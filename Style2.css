@@ -1,0 +1,12 @@
+.CategorySearch{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    font-size: 25px;
+    margin-top: 15px;
+    width: 100%;
+}
+.CategorySearch h5{
+    font-weight: 400;
+    font-family: 'Nunito Sans', sans-serif;
+}

@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TosTrip: Trip Guidance</title>
+    <link rel="stylesheet" href="water.css">
+    <link rel="stylesheet" href="/Style.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html">TosTrip</a>
+          </div>
+          <div class="navigation">
+            <a href="#TypeTrips">Destinations</a>
+            <a>Popular</a>
+            <a>Review</a>
+          </div>
+          <div class="Profile_Search">
+            <div class="nav-search-wrapper">
+              <i
+                class="bxr bx-search-big"
+                id="searchToggle"
+                style="position: relative; z-index: 100"
+              ></i>
+              <div class="nav-search-bar" id="navSearchBar">
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+            <a href="/Account/account.html"><i class="bxr bx-user"></i></a>
+            <label class="burger" for="burger">
+              <input type="checkbox" id="burger" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </nav>
+
+    <div class="outdoor-hero">
+        <div class="overlay"></div>
+        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765034514/5_6172224701385939189_k0obcx.mp4">
+        </video>
+        <div class="outdoor-hero-content">
+            <h1 style="font-family: 'Montserrat', sans-serif;">Explore the water theme</h1>
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <p style="font-family: 'Montserrat', sans-serif;
+                 font-weight: 500;
+                  margin-top: 8px;">
+                  Discover breathtaking landscapes and immerse yourself in nature with
+                  our curated water tours.
+                </p>
+                <div style="display:flex; gap: 2px;">
+                    <h3 style="color: white;">Explore</h3>
+                    <i class='bxr  bx-arrow-down-stroke' style="color: white; font-size: 1.8rem;"></i> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+    ">
+        <h1 style="color: white; font-family: 'Nunito Sans', sans-serif;">Discover water destinations</h1>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <p style="color: white; font-size: 20px;">Filter</p>
+            <i style="color: white; font-size: 18px;" class='bxr  bx-carets-up-down'></i> 
+        </div>
+    </div>
+    
+    <div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764958488/Amalfi-Coast-1440x900_p0ajaf.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Amalfi Coast, Italy</p>
+            <h3>spend amazing trip at Amalfi Coast</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764958919/glowing-beaches-of-vaadhoo-island-in-maldives_rlmkwo.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Valhood Island, Maldives</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959057/aerial-photo-of-lily_f4e6gv.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Ari Atoll, Maldives</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959174/licensed-image_1_ehgarg.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Bora Bora, French</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959344/olvu6sgb3dcdjwlcpts3_m1rbi1.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Bali, Indonesia</p>
+            <h3>Kenai Fjords and Resurrection Bay Half-Day Wildlife Cruise</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959541/Outer-Banks-shoreline-during-the-day_g6yir7.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Outer Banks, USA</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959910/Blue-Lagoon-Comino-Island-Malta_gws9hh.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Malta, Europe</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960019/Navagio-or-Shipwreck-Beach-in-Zakynthos_kpms01.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">The Greek Island, Greece</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+<div style="width: 100%; height: 30px; display: flex; justify-content: end; align-items: center; margin-top: 15px;">
+    <a href="" style="color: white; font-size: 18px;">View More</a>
+</div>
+
+<h1 style="color: white; margin-top: 75px; font-family: 'Nunito Sans', sans-serif;">Famous thing to do in summer trip</h1>
+<div class="slider-container">
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="slider" id="animal-slider">
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960370/64cb3cea7873b194_best-snorkeling-in-the-world-buck-island-st_-croix-snorkel-1024x768_frx07t.jpg" alt="">
+                <div class="caption-letter" style="left: 7%;">Snoking</div>
+            </div>
+
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960369/Collection-Header-Desktop-all-rounder_1_egnn5e.webp" alt="">
+                <div class="caption-letter" style="left: 11%;">Paddleboarding</div>
+            </div>
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960453/Girl_in_kayak_Whanganui_River_at_Blue_Duck_Station_-_Visit_Ruapehu_hpxwpq.jpg" alt="">
+                <div class="caption-letter" style="left: 13%;">Kayaking/Canoeing</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="hotelwrapper">
+        <h1 style="color: white; font-family: 'Nunito Sans',  sans-serif;">Hotel with view by destinations</h1>
+        <div class="hotel">
+            <div class="hotelpre">
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765121316/Screen_Recording_2025-12-07_222813_qhn0qx.mp4">
+                </video>
+            </div>
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Capella Ubud</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Bali - Indonesia</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Ubud, Bali's cultural and spiritual center, offers a blend of bustling streets with boutiques and cafes,
+                         surrounded by rice fields and jungle. The finest accommodations are found outside of town, such as the Capella Ubud.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,283 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel">
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Borgo Santandrea</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Amalfi Coast - Italy</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Overlooking the enchanting, centuries-old fishing village of Conca dei Marini, Borgo Santandrea is a serene haven situated in the heart of the Amalfi Coast.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,200 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+            <div class="hotelpre" >
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765127639/Screen_Recording_20251208_001058_YouTube_ubz8uh.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="hotel">
+            <div class="hotelpre">
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765121316/Screen_Recording_2025-12-07_222813_qhn0qx.mp4">
+                </video>
+            </div>
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Capella Ubud</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Bali - Indonesia</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Ubud, Bali's cultural and spiritual center, offers a blend of bustling streets with boutiques and cafes,
+                         surrounded by rice fields and jungle. The finest accommodations are found outside of town, such as the Capella Ubud.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,283 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="UserExp">
+        <div class="UserHeadLine">
+            <h1 style="font-size: 3.3rem; font-family: 'Nunito Sans';">Traveler's Experience
+            </h1>
+            <p style="font-size: 18px; font-family: 'Montserrat', sans-serif;">Hear from our adventurers who embraced the wild and 
+                returned with unforgettable stories.
+            </p>
+            <p style="font-size: 18px; margin-top: 15px;
+             font-family: 'Montserrat'; font-style: italic; color: rgb(17, 17, 119)">
+             Mr.Bora Red - "I found the Minnewanka trip to be a breathtaking adventure. 
+             I enjoyed the scenic cruise on the deep turquoise waters surrounded by the Rockies. 
+             Reaching Devil's Gap was the highlight. I was happy to spot wildlife like deer and bighorn sheep. 
+             It was a perfect blend of relaxation and wild exploration."
+            </p>
+            <div class="fullReview">
+                <div style="display: flex; align-items: center; gap: 3px;">
+                    <i class='bxr  bx-eye-alt' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See full review</a>
+                </div>
+                <div style="display: flex; gap: 3px;">
+                    <i class='bxr  bx-location-alt-2' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See Destination</a>
+                </div>
+            </div>
+                
+            </div>
+        <div class="UserImg">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764940509/Whitewater_rafting_in_Slovenia_on_the_emerald_Soca_River_tjouqh.jpg" alt="">
+        </div>
+    </div>
+    <div class="btText" style="margin-top: 165px;">
+        <h1>TosTrip: Your Journey Starts Here</h1>
+        <p>Explore the world with confidence. TosTrip is the definitive 
+          platform for travelers, fueled by a global community of millions. 
+          Get unbiased reviews, essential booking tools, and deep local insights
+           to unlock exclusive rewards and save on every trip ensuring your best adventure yet.
+        </p>
+      </div>
+
+        <footer class="footer">
+        <div class="footer-logo">
+            <a href="#">TosTrip</a>
+        </div>
+        <div class="footer-description">
+            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.</p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Descover</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Top Destinations</a></li>
+                    <li><a href="#" class="footer-link">Travel Guides</a></li>
+                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Careers <span style="color: #0f940f;">(We're Hiring!)</span></a></li>
+                    <li><a href="#" class="footer-link">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Help & Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+                    <a href="" style=" color:black;"><i class='bxl  bx-facebook'></i> </i></a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-instagram-alt'></i>  </a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-twitter-x'></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-copyright">
+            <p>© TosTrip 2025. All rights reserved.</p>
+            <div class="Cookie_Social">
+                <a class="footer-link" href="./Account/account.html">Sign Up</a>
+                <a class="footer-link" href="">Sitemap</a>
+                <a class="footer-link" href="">Cookies Settings</a>
+                <a class="footer-link" href="">Accessiblity</a>
+            </div>
+        </div>
+    </footer>
+            
+
+    <script src="/Account/ScrollBar.js"></script>
+    <script src="./thingToDo.js"></script>
+</body>
+</html>

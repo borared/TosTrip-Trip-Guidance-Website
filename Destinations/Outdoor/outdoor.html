@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TosTrip: Trip Guidance</title>
+    <link rel="stylesheet" href="outdoor.css">
+    <link rel="stylesheet" href="/Style.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html">TosTrip</a>
+          </div>
+          <div class="navigation">
+            <a href="#TypeTrips">Destinations</a>
+            <a>Popular</a>
+            <a>Review</a>
+          </div>
+          <div class="Profile_Search">
+            <div class="nav-search-wrapper">
+              <i
+                class="bxr bx-search-big"
+                id="searchToggle"
+                style="position: relative; z-index: 100"
+              ></i>
+              <div class="nav-search-bar" id="navSearchBar">
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+            <a href="/Account/account.html"><i class="bxr bx-user"></i></a>
+            <label class="burger" for="burger">
+              <input type="checkbox" id="burger" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+          </div>
+        </nav>
+
+    <div class="outdoor-hero">
+        <div class="overlay"></div>
+        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764778331/5d9af782ba1fa5d50fc5ce44d122a588_qiyabq.mp4">
+        </video>
+        <div class="outdoor-hero-content">
+            <h1 style="font-family: 'Montserrat', sans-serif;">Explore the outdoors</h1>
+            <p style="font-family: 'Montserrat', sans-serif; font-weight: 500; margin-top: 8px;">Discover breathtaking landscapes and immerse yourself in nature with
+                 our curated outdoor tours.</p>
+        </div>
+    </div>
+    
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+    ">
+        <h1 style="color: white;">Discover outdoor destinations</h1>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <p style="color: white; font-size: 20px;">Filter</p>
+            <i style="color: white; font-size: 18px;" class='bxr  bx-carets-up-down'></i> 
+        </div>
+    </div>
+    
+    <div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764829097/1300x820_xnztqi.webp" alt=""></div>
+        <div class="card-details">
+            <p class="location">Seward</p>
+            <h3>Kenai Fjords and Resurrection Bay Half-Day Wildlife Cruise</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764831877/shutterstock_125026373-fotor-20240328153331_mrm5sx.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Melbourne</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764829905/tdp-atractivo-panoramicas-06-600x338_mbtm9g.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Manuel Antonio</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764831893/acadia-national-park-sunset_fl06mj.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Cape Town Central</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764834441/unnamed-52_rsamiy.webp" alt=""></div>
+        <div class="card-details">
+            <p class="location">Seward</p>
+            <h3>Kenai Fjords and Resurrection Bay Half-Day Wildlife Cruise</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764834443/f5f9b101-1755-4a03-8ba0-dd8f5e8970bd_1_201_a_klfgto.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Melbourne</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764834441/south-coast-minibus-tour-with-glacier-hike-transfer-from-reykjavik-9_vzpomo.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Manuel Antonio</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764834573/unnamed_1_xt4e1i.webp" alt=""></div>
+        <div class="card-details">
+            <p class="location">Cape Town Central</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+<div style="width: 100%; height: 30px; display: flex; justify-content: end; align-items: center; margin-top: 15px;">
+    <a href="" style="color: white; font-size: 18px;">View More</a>
+</div>
+
+<h1 style="color: white; margin-top: 75px;">Amazing animal by destinations</h1>
+<div class="slider-container">
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="slider" id="animal-slider">
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764835713/yellowstone-national-park-buffalo_HERO_YELLOWSTONEWINTER1022-915e2c98a89e421aa907d65bcae05b73_cufqmt.jpg" alt="Bison at Yellowstone">
+                <div class="caption-letter" style="left: 12%;">Bison - Yellowstone</div>
+            </div>
+
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764838012/llama-cusco_kvai48.jpg" alt="">
+                <div class="caption-letter" style="left: 20%;">Llamas and alpacas - Machu Picchu</div>
+            </div>
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764839695/Toucan-Tahan-River-Taman-Negara-1024x593_cyenvp.jpg" alt="">
+                <div class="caption-letter" style="left: 10%;">Toco Toucan</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="UserExp">
+        <div class="UserHeadLine">
+            <h1 style="font-size: 3.3rem; font-family: 'Nunito Sans';">Traveler's Experience
+            </h1>
+            <p style="font-size: 18px; font-family: 'Montserrat', sans-serif;">Hear from our adventurers who embraced the wild and 
+                returned with unforgettable stories.
+            </p>
+            <p style="font-size: 18px; margin-top: 15px;
+             font-family: 'Montserrat'; font-style: italic; color: rgb(17, 17, 119)">
+             Mr.Bora Red - "I found the Minnewanka trip to be a breathtaking adventure. 
+             I enjoyed the scenic cruise on the deep turquoise waters surrounded by the Rockies. 
+             Reaching Devil's Gap was the highlight. I was happy to spot wildlife like deer and bighorn sheep. 
+             It was a perfect blend of relaxation and wild exploration."
+            </p>
+            <div class="fullReview">
+                <div style="display: flex; align-items: center; gap: 3px;">
+                    <i class='bxr  bx-eye-alt' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See full review</a>
+                </div>
+                <div style="display: flex; gap: 3px;">
+                    <i class='bxr  bx-location-alt-2' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See Destination</a>
+                </div>
+            </div>
+                
+            </div>
+        <div class="UserImg">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764940509/MOUN_TAIN_EERING_SHOES_-_INNOVATION_AT_HIGHEST_LEVEL_cjrqq6.jpg" alt="">
+        </div>
+    </div>
+    <div class="btText" style="margin-top: 165px;">
+        <h1>TosTrip: Your Journey Starts Here</h1>
+        <p>Explore the world with confidence. TosTrip is the definitive 
+          platform for travelers, fueled by a global community of millions. 
+          Get unbiased reviews, essential booking tools, and deep local insights
+           to unlock exclusive rewards and save on every trip ensuring your best adventure yet.
+        </p>
+      </div>
+
+        <footer class="footer">
+        <div class="footer-logo">
+            <a href="#">TosTrip</a>
+        </div>
+        <div class="footer-description">
+            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.</p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Descover</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Top Destinations</a></li>
+                    <li><a href="#" class="footer-link">Travel Guides</a></li>
+                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Careers <span style="color: #0f940f;">(We're Hiring!)</span></a></li>
+                    <li><a href="#" class="footer-link">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Help & Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+                    <a href="" style=" color:black;"><i class='bxl  bx-facebook'></i> </i></a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-instagram-alt'></i>  </a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-twitter-x'></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-copyright">
+            <p>© TosTrip 2025. All rights reserved.</p>
+            <div class="Cookie_Social">
+                <a class="footer-link" href="./Account/account.html">Sign Up</a>
+                <a class="footer-link" href="">Sitemap</a>
+                <a class="footer-link" href="">Cookies Settings</a>
+                <a class="footer-link" href="">Accessiblity</a>
+            </div>
+        </div>
+    </footer>
+            
+
+    <script src="/Account/ScrollBar.js"></script>
+    <script src="animal.js"></script>
+</body>
+</html>
