@@ -2,7 +2,7 @@
 
 **TosTrip** is a **trip guidance** exclusively dedicated to **guide tourist for their trip around the world**. This project showcases the **elegance, performance** of trip advisor while offering a seamless user experience.  
 
-This project is part of an **end-of-course assignment Term 1**, designed to demonstrate skills in **web development and UI/UX design**.   
+This project is part of an **end-of-course final project Term 1**, designed to demonstrate skills in **web development and UI/UX design**.   
 
 
 ## 🛠️ Technologies Used  
