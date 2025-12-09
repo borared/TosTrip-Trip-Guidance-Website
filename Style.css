@@ -271,7 +271,7 @@ body {
 .searchWrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: 180px;
+  margin-top: 120px;
 }
 .search {
   margin-top: 80px;
@@ -341,7 +341,7 @@ body {
   top: 0;
 }
 .header {
-  margin-top: 200px;
+  margin-top: 100px;
   position: relative;
   display: flex;
   

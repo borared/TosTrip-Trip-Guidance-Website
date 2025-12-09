@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TosTrip: Trip Guidance</title>
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="/Style.css">
+    <link href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <a href="/index.html" style="font-family: 'Nunito Sans',sans-serif;">TosTrip</a>
+          <i class='bxr  bx-plane-alt' style="color: white;"></i>
+        </div>
+        <div class="navigation">
+          <a href="">Destinations</a>
+          <a>Popular</a>
+          <a href="/Map/map.html">Map</a>
+          <a>Review</a>
+        </div>
+        <div class="Profile_Search">
+          <div class="nav-search-wrapper">
+            <i class="bxr bx-search-big" id="searchToggle" style="position: relative; z-index: 100"></i>
+            <div class="nav-search-bar" id="navSearchBar">
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+          <a href="./Account/account.html"><i class="bxr bx-user"></i></a>
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </nav>
+
+  <!-- Map -->
+  <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.0767083608!2d-74.30915277037441!3d40.6966726870191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2skh!4v1765283352326!5m2!1sen!2skh" width="600" height="450" style="border:0;" 
+  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+  <div class="btText">
+      <h1>TosTrip: Your Journey Starts Here</h1>
+      <p>Explore the world with confidence. TosTrip is the definitive
+        platform for travelers, fueled by a global community of millions.
+        Get unbiased reviews, essential booking tools, and deep local insights
+        to unlock exclusive rewards and save on every trip ensuring your best adventure yet.</p>
+    </div>
+    <footer class="footer" style="margin-top: 70px; position: relative; z-index: 100;">
+        <div class="footer-logo">
+            <a href="/index.html">TosTrip</a>
+            <i class='bxr  bx-plane-alt' style="font-size: 3.5rem;"></i>
+        </div>
+        <div class="footer-description">
+            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.
+            </p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Descover</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Top Destinations</a></li>
+                    <li><a href="#" class="footer-link">Travel Guides</a></li>
+                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Careers <span style="color: #0f940f;">(We're Hiring!)</span></a>
+                    </li>
+                    <li><a href="#" class="footer-link">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Help & Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Connect</h3>
+                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+                    <a href="" style=" color:black;"><i class='bxl  bx-facebook'></i> </i></a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-instagram-alt'></i> </a>
+                    <a href="" style=" color:black;"><i class='bxl  bx-twitter-x'></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-copyright">
+            <p>© TosTrip 2025. All rights reserved.</p>
+            <div class="Cookie_Social">
+                <a class="footer-link" href="">Sitemap</a>
+                <a class="footer-link" href="">Cookies Settings</a>
+                <a class="footer-link" href="">Accessiblity</a>
+            </div>
+        </div>
+    </footer>
+    <script src="/Account/ScrollBar.js"></script>
+    <script src="map.js"></script>
+</body>
+
+</html>
