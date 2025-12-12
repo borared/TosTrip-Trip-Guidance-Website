@@ -235,6 +235,8 @@ body {
   background-color: black;
   opacity: 0.6;
 }
+
+
 .Main_Content .head_line {
   position: relative;
   top: 35%;
@@ -653,17 +655,32 @@ body {
   margin-top: 15px;
 }
 .footer {
-    background-color: #ffffff;
+    background: url(https://res.cloudinary.com/dicrvjstp/image/upload/v1765469666/techo-international-airport-cambodia-foster-plus-partners_2_darjpb.jpg) no-repeat center center;
+    background-size: cover;
     height: auto;
-    color: rgb(0, 0, 0);
     padding: 50px 32px;
     margin-top: 45px;
     width: 1520px;
     margin-left: -35px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 1;
+  
 }
 .footer-logo {
     display: flex;
     gap: 5px;
+    z-index: 1;
+    position: relative;
 }
 
 .footer-logo a {
@@ -672,37 +689,44 @@ body {
     letter-spacing: 0.025em;
     margin-bottom: 24px;
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
 }
 .footer-description {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 24px;
-    color: #000000;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
 }
 
 .footer-divider {
-    border-color: rgba(0, 0, 0, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
     margin-bottom: 80px;
-    
+     z-index: 1;
+    position: relative;
 }
 
 .footer-divider-bottom {
     margin-top: 32px;
     margin-bottom: 16px;
+     z-index: 1;
+    position: relative;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* ⬅ 4 columns */
     gap: 32px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 160px;
+     z-index: 1;
+    position: relative;
 }
 
 .footer-heading {
     font-weight: 600;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-bottom: 16px;
 }
 
@@ -714,7 +738,7 @@ body {
 }
 
 .footer-link {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     transition: text-decoration 0.2s;
 }
@@ -728,9 +752,12 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 16px;
+     z-index: 1;
+    position: relative;
 }
+
 .Cookie_Social {
     display: flex;
     gap: 16px;
@@ -738,9 +765,11 @@ body {
     align-items: center;
 }
 .Cookie_Social a {
-    color: #000000;
+    color: #ffffff;
     transition: color 0.2s;
     text-decoration: none;
+     z-index: 1;
+    position: relative;
 }
 
 
