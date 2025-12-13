@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TosTrip: Trip Guidance</title>
+    <link rel="stylesheet" href="/Destinations/water/water.css"/>
+    <link rel="stylesheet" href="/Style.css" />
+    <link rel="stylesheet" href="capella.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/index.html">TosTrip</a>
+        <i class="bxr bx-plane-alt" style="color: white"></i>
+      </div>
+      <div class="navigation">
+        <a href="#TypeTrips">Destinations</a>
+        <a>Popular</a>
+        <a href="/Map/map.html">Map</a>
+        <a>Review</a>
+      </div>
+      <div class="Profile_Search">
+        <div class="nav-search-wrapper">
+          <i
+            class="bxr bx-search-big"
+            id="searchToggle"
+            style="position: relative; z-index: 100"
+          ></i>
+          <div class="nav-search-bar" id="navSearchBar">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <a href="/Account/account.html"><i class="bxr bx-user"></i></a>
+        <label class="burger" for="burger">
+          <input type="checkbox" id="burger" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </nav>
+
+    <div class="hotel-listing">
+      <div class="header-section">
+        <h1 class="hotel-name">Capella Ubud, Bali</h1>
+        <div class="actions">
+          <button class="action-button">
+            <span class="icon"><i class='bxr  bx-share'></i> </span> Share
+          </button>
+          <button class="action-button">
+            <span class="icon"><i class='bxr  bx-star'></i> </span> Review
+          </button>
+          <button class="action-button">
+            <span class="icon"><i class='bxr  bx-save'></i> </span> Save
+          </button>
+        </div>
+      </div>
+
+      <div class="details-section">
+        <div class="rating-info">
+          <span class="score">4.9</span>
+          <div class="stars">★★★★★</div>
+          <span class="reviews">(587 reviews)</span>
+          <span class="ranking">#5 of 46 hotels in Tegalalang</span>
+        </div>
+        <button class="check-availability-button">Check availability</button>
+      </div>
+
+      <div class="contact-links">
+        <a href="#" class="contact-link">
+          <span class="icon"><i class='bxr  bx-globe-americas'></i> </span> Visit hotel website
+        </a>
+        <a href="#" class="contact-link">
+          <span class="icon"><i class='bxr  bx-envelope'></i> </span> E-mail hotel
+        </a>
+        <a href="#" class="contact-link">
+          <span class="icon"><i class='bxr  bx-location-alt-2'></i> </span> View location
+        </a>
+      </div>
+    </div>
+
+    <div class="photo-video-grid">
+    <div class="main-image-container">
+        <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765621070/one-bedroom-keliki-village_nq9hem.jpg" alt="Aerial view of Capella Ubud pool and forest" class="main-image">
+        <div class="badge-overlay">
+            <span class="video-count">
+                <span class="icon">▶️</span> 1,548
+            </span>
+        </div>
+    </div>
+    <div class="sidebar-thumbnails">
+        <div class="thumbnail-item food">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765621094/api-jiwa_vdbdzg.jpg" alt="Hotel room interior" class="thumbnail-img">
+            <div class="thumbnail-overlay">
+                <span class="category">Food</span>
+                <span class="count">1,386</span>
+            </div>
+        </div>
+        <div class="thumbnail-item dining">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765621070/the-camp-fire_oclaao.jpg" alt="Hotel dining area" class="thumbnail-img">
+            <div class="thumbnail-overlay">
+                <span class="category">Dining</span>
+                <span class="count">129</span>
+            </div>
+        </div>
+        <div class="thumbnail-item videos">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765621095/capella-ubud-bali-by_ce7908.jpg" alt="Small thumbnail of aerial view" class="thumbnail-img">
+            <div class="thumbnail-overlay">
+                <span class="category">
+                    <span class="icon">▶️</span> Videos
+                </span>
+                <span class="count">1</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="price-travel-container">
+    <h2 class="price-header">View prices for your travel dates</h2>
+    
+    <div class="special-offer-box">
+        <span class="offer-icon">🏷️</span>
+        <span class="offer-text">Stay 3-Night Pay Only 2</span>
+    </div>
+    <div class="price-list-container">
+        <div class="price-item">
+            <div class="logo-name"><img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765623293/Booking_Com_v2_384x164_Blue_egqchl.png" alt=""></div>
+            <div class="price-details">
+                <span class="price-value">$1,186</span>
+            </div>
+            <button class="view-deal-button">View deal</button>
+        </div>
+        <div class="price-item trip-com">
+            <div class="logo-name"><img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765623293/trip_logo_tripadvisor_vxch6w.png" alt=""></div>
+            <div class="inclusions">
+                <span>✓ Breakfast included</span>
+                <span>✓ Earn Trip Coins after your stay</span>
+            </div>
+            <div class="price-details">
+                <span class="price-value">$1,270</span>
+            </div>
+            <button class="view-deal-button">View deal</button>
+        </div>
+        <div class="price-item agoda">
+            <div class="logo-name"><img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1765623292/Agoda_l9yuyh.png" alt=""></div>
+            <div class="inclusions">
+                <span>✓ No booking fees</span>
+            </div>
+            <div class="price-details">
+                <span class="strikethrough-price">$1,270</span>
+                <span class="availability-note">Only 1 left at</span>
+                <span class="price-value discounted">$1,117</span>
+            </div>
+            <button class="view-deal-button white">View deal</button>
+        </div>
+    </div>
+    <p class="disclaimer">Prices are provided by our partners, and reflect nightly room rates, including any mandatory fees. Taxes not included. Please see our partners for more details.</p>
+</div>
+
+    <div class="Location">
+         <h1 style="color: black;">Location</h1>
+         <hr style="margin-top: 15px;">
+         <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.5250708773265!2d115.2655367747735!3d-8.448209091591746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2232a33674863%3A0x25093ef92f99017c!2sCapella%20Ubud%2C%20Bali!5e0!3m2!1sen!2skh!4v1765623822491!5m2!1sen!2skh"
+             width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
+    </div>
+
+    <div class="review-summary-container" style="margin-top: 40px;" >
+    <div class="reviews-header">
+        <h2 class="section-title">Reviews</h2>
+        <div class="review-actions">
+            <a href="#" class="review-link insider-tips">Insider tips/Q&A (103)</a>
+            <a href="#" class="review-link all-reviews">All reviews (587)</a>
+            <button class="action-button share-insider">
+                <span class="icon"><i class='bxr  bx-light-bulb-alt'></i> </span> Share an insider tip
+            </button>
+            <button class="action-button write-review">
+                <span class="icon"><i class='bxr  bx-edit'></i> </span> Write a review
+            </button>
+        </div>
+    </div>
+
+    <div class="review-content">
+        <div class="overall-rating">
+            <span class="score">4.9</span>
+            <span class="descriptor">Excellent</span>
+            <div class="stars">★★★★★</div>
+            <span class="count">(587)</span>
+        </div>
+
+        <div class="breakdown-bars">
+            <div class="bar-row">
+                <span class="label">Excellent</span>
+                <div class="bar-wrapper">
+                    <div class="bar" style="width: 95%;"></div>
+                </div>
+                <span class="bar-count">563</span>
+            </div>
+            <div class="bar-row">
+                <span class="label">Good</span>
+                <div class="bar-wrapper">
+                    <div class="bar" style="width: 2.2%;"></div>
+                </div>
+                <span class="bar-count">13</span>
+            </div>
+            <div class="bar-row">
+                <span class="label">Average</span>
+                <div class="bar-wrapper">
+                    <div class="bar" style="width: 1%;"></div>
+                </div>
+                <span class="bar-count">6</span>
+            </div>
+            <div class="bar-row">
+                <span class="label">Poor</span>
+                <div class="bar-wrapper">
+                    <div class="bar" style="width: 0.5%;"></div>
+                </div>
+                <span class="bar-count">3</span>
+            </div>
+            <div class="bar-row">
+                <span class="label">Terrible</span>
+                <div class="bar-wrapper">
+                    <div class="bar" style="width: 0.3%;"></div>
+                </div>
+                <span class="bar-count">2</span>
+            </div>
+        </div>
+
+        <div class="category-ratings">
+            <div class="rating-item">
+                <span class="category-label">Rooms</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 98%;"></div>
+                </div>
+                <span class="category-score">4.9</span>
+            </div>
+            <div class="rating-item">
+                <span class="category-label">Service</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 100%;"></div>
+                </div>
+                <span class="category-score">5.0</span>
+            </div>
+            <div class="rating-item">
+                <span class="category-label">Value</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 96%;"></div>
+                </div>
+                <span class="category-score">4.8</span>
+            </div>
+            <div class="rating-item">
+                <span class="category-label">Cleanliness</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 98%;"></div>
+                </div>
+                <span class="category-score">4.9</span>
+            </div>
+            <div class="rating-item">
+                <span class="category-label">Location</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 98%;"></div>
+                </div>
+                <span class="category-score">4.9</span>
+            </div>
+            <div class="rating-item">
+                <span class="category-label">Sleep Quality</span>
+                <div class="category-bar-wrapper">
+                    <div class="category-bar" style="width: 96%;"></div>
+                </div>
+                <span class="category-score">4.8</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="relavent">
+        <h2 style="color: white;">You might also like</h2>
+        <div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764958488/Amalfi-Coast-1440x900_p0ajaf.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Amalfi Coast, Italy</p>
+            <h3>spend amazing trip at Amalfi Coast</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764958919/glowing-beaches-of-vaadhoo-island-in-maldives_rlmkwo.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Valhood Island, Maldives</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959057/aerial-photo-of-lily_f4e6gv.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Ari Atoll, Maldives</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959174/licensed-image_1_ehgarg.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Bora Bora, French</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+    </div>
+
+    <div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959344/olvu6sgb3dcdjwlcpts3_m1rbi1.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Bali, Indonesia</p>
+            <h3>Kenai Fjords and Resurrection Bay Half-Day Wildlife Cruise</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $166</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959541/Outer-Banks-shoreline-during-the-day_g6yir7.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Outer Banks, USA</p>
+            <h3>Penguin Parade, & Wildlife Encounters Eco Tour from Melbourne</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $111</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764959910/Blue-Lagoon-Comino-Island-Malta_gws9hh.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Malta, Europe</p>
+            <h3>Manuel Antonio Park Nature Guided Tour with a Nature Specialist</h3>
+            <p class="rating">4.9 (3,205)</p>
+            <p class="price-from">from $49</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960019/Navagio-or-Shipwreck-Beach-in-Zakynthos_kpms01.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">The Greek Island, Greece</p>
+            <h3>2 Day Safari Experience from Cape Town</h3>
+            <p class="rating">4.9 (251)</p>
+            <p class="price-from">from $467</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="btText" style="margin-top: 165px;">
+        <h1>TosTrip: Your Journey Starts Here</h1>
+        <p>Explore the world with confidence. TosTrip is the definitive 
+          platform for travelers, fueled by a global community of millions. 
+          Get unbiased reviews, essential booking tools, and deep local insights
+           to unlock exclusive rewards and save on every trip ensuring your best adventure yet.
+        </p>
+      </div>
+
+    <footer class="footer"
+    style="box-sizing: border-box;
+    width: calc(100% + 70px);">
+            <div class="overlay"></div>
+        <div class="footer-logo">
+            <a href="/index.html" style="font-family: 'Nunito Sans', sans-serif;">TosTrip</a>
+            <i class='bxr  bx-plane-alt' style="font-size: 3.5rem;"></i>
+        </div>
+        <div class="footer-description">
+            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.</p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Descover</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Top Destinations</a></li>
+                    <li><a href="#" class="footer-link">Travel Guides</a></li>
+                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Careers <span style="color: #0fe50f;">(We're Hiring!)</span></a></li>
+                    <li><a href="#" class="footer-link">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Help & Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-facebook'></i> </i></a>
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-instagram-alt'></i>  </a>
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-twitter-x'></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-copyright">
+            <p>© TosTrip 2025. All rights reserved.</p>
+            <div class="Cookie_Social">
+                <a class="footer-link" href="./Account/account.html">Sign Up</a>
+                <a class="footer-link" href="">Sitemap</a>
+                <a class="footer-link" href="">Cookies Settings</a>
+                <a class="footer-link" href="">Accessiblity</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Account/ScrollBar.js"></script>
+  </body>
+</html>

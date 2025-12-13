@@ -772,6 +772,9 @@ body {
     position: relative;
 }
 
+/* ------------------------------------------- */
+/* RESPONSIVE DESIGN (Mobile)        */
+/* ------------------------------------------- */
 
 /* MEDIA QUERIES */
 @media (max-width: 1440px) {
