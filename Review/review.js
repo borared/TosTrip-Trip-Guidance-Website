@@ -400,13 +400,13 @@ function init() {
 
 // Add some animation on page load
 window.addEventListener('load', () => {
-    document.querySelector('.container').style.opacity = '0';
-    document.querySelector('.container').style.transform = 'translateY(20px)';
+    document.querySelector('.containerReview').style.opacity = '0';
+    document.querySelector('.containerReview').style.transform = 'translateY(20px)';
     
     setTimeout(() => {
-        document.querySelector('.container').style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        document.querySelector('.container').style.opacity = '1';
-        document.querySelector('.container').style.transform = 'translateY(0)';
+        document.querySelector('.containerReview').style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        document.querySelector('.containerReview').style.opacity = '1';
+        document.querySelector('.containerReview').style.transform = 'translateY(0)';
         
         // Initialize the application
         init();

@@ -620,4 +620,14 @@ body {
         grid-template-columns: 1fr;
         width: 100%;
     }
+    .details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+  }
+  .check-availability-button {
+    font-size: 14px;
+  }
 }

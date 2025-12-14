@@ -4,620 +4,626 @@
   padding: 0;
 }
 
-
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    padding: 20px;
-    height: 400vh;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
+  height: 400vh;
 }
 
 .hotel-listing {
-    width: 100%;
-    margin-top: 100px;
+  width: 100%;
+  margin-top: 100px;
 }
 
 /* --- Header Section (Hotel Name & Actions) --- */
 .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hotel-name {
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-    margin: 0;
-    padding: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .actions {
-    display: flex;
-    gap: 20px; 
+  display: flex;
+  gap: 20px;
 }
 
 .action-button {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    font-weight: 400; 
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  font-weight: 400;
 }
 
 .action-button .icon {
-    margin-right: 5px;
-    font-size: 18px; /* For the emoji icons */
+  margin-right: 5px;
+  font-size: 18px; /* For the emoji icons */
 }
 
 /* --- Details Section (Rating & Availability) --- */
 .details-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .rating-info {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
 }
 
 .rating-info .score {
-    font-weight: 700;
-    color: white;
+  font-weight: 700;
+  color: white;
 }
 
 /* Styling the star icons */
 .rating-info .stars {
-    color: #ffe600; /* A vivid green for the stars */
-    letter-spacing: 1px;
-    font-size: 22px;
-    margin-top: -4px;
+  color: #ffe600; /* A vivid green for the stars */
+  letter-spacing: 1px;
+  font-size: 22px;
+  margin-top: -4px;
 }
 
 .rating-info .reviews {
-    color: white;
-    font-weight: 400;
-    text-decoration: underline;
+  color: white;
+  font-weight: 400;
+  text-decoration: underline;
 }
 
 .rating-info .ranking {
-    color: white;
+  color: white;
 }
 
 .check-availability-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #059d17; /* Bright green color */
-    color: white;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 50px; /* Highly rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s;
-    height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #059d17; /* Bright green color */
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px; /* Highly rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 35px;
 }
 
-
 .contact-links {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .contact-link {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .contact-link .icon {
-    margin-right: 5px;
-    font-size: 18px;
-    margin-top: 3px;
+  margin-right: 5px;
+  font-size: 18px;
+  margin-top: 3px;
 }
 
 .photo-video-grid {
-    display: grid;
-    /* Define the grid columns: 70% for main, 30% for sidebar on large screens */
-    grid-template-columns: 70% 30%;
-    max-width: 100%;
-    margin: 20px auto;
-    gap: 5px; 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+  display: grid;
+  /* Define the grid columns: 70% for main, 30% for sidebar on large screens */
+  grid-template-columns: 70% 30%;
+  max-width: 100%;
+  margin: 20px auto;
+  gap: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 /* --- Main Image Container (Left/Top) --- */
 .main-image-container {
-    position: relative;
-    overflow: hidden;
-    /* Ensure the main image container has a consistent height on desktop for visual balance */
-    min-height: 400px; /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+  /* Ensure the main image container has a consistent height on desktop for visual balance */
+  min-height: 400px; /* Adjust as needed */
 }
 
 .main-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
 .video-count {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 /* --- Sidebar Thumbnails (Right/Bottom) --- */
 .sidebar-thumbnails {
-    display: grid;
-    /* Sidebar has three equally sized rows */
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    min-height: 200px; /* Match the height of the main container */
-    overflow: hidden;
+  display: grid;
+  /* Sidebar has three equally sized rows */
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  min-height: 200px; /* Match the height of the main container */
+  overflow: hidden;
 }
 
 .thumbnail-item {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .thumbnail-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    /* Optional hover effect */
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  /* Optional hover effect */
+  transition: transform 0.3s ease;
 }
 
 .thumbnail-item:hover .thumbnail-img {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .thumbnail-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    /* Gradient for better text readability, similar to the image */
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* Gradient for better text readability, similar to the image */
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .category {
-    font-weight: 600;
-    font-size: 16px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .count {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 /* --- PRICE COMPARISON SECTION --- */
 .price-travel-container {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    background-color: white;
-    
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background-color: white;
 }
 
 .price-header {
-    font-size: 20px;
-    font-weight: bold;
-    color: #004d40;
-    margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #004d40;
+  margin-bottom: 25px;
 }
 
-
-
 .special-offer-box {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff0f0;
-    border-radius: 8px;
-    color: #cc0000;
-    font-weight: bold;
-    margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff0f0;
+  border-radius: 8px;
+  color: #cc0000;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
 .offer-icon {
-    font-size: 18px;
-    margin-right: 10px;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 .price-list-container {
-    border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .price-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .price-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .logo-name {
-    flex: 1;
+  flex: 1;
 }
 
-.logo-name img{
-    width: 120px;
+.logo-name img {
+  width: 120px;
 }
 .inclusions {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 14px;
-    color: #333;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
 }
 
 .price-details {
-    flex: 1;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .price-value {
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
 }
 
 .price-item.agoda .price-value {
-    font-size: 20px;
-    color: #cc0000;
+  font-size: 20px;
+  color: #cc0000;
 }
 
 .strikethrough-price {
-    text-decoration: line-through;
-    color: #999;
-    font-size: 14px;
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
 }
 
 .availability-note {
-    color: #cc0000;
-    font-size: 12px;
+  color: #cc0000;
+  font-size: 12px;
 }
 
 .view-deal-button {
-    padding: 10px 20px;
-    border-radius: 50px;
-    font-weight: 500;
-    cursor: pointer;
-    margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 20px;
 }
 
 .view-deal-button {
-    background-color: #4b32f0;
-    color: white;
-    border: none;
+  background-color: #4b32f0;
+  color: white;
+  border: none;
 }
-
 
 .disclaimer {
-    font-size: 12px;
-    color: #666;
-    margin-top: 15px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 15px;
 }
 
-.Location{
-    width: 100%;
-    height: 570px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 12px;
+.Location {
+  width: 100%;
+  height: 570px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
 }
-.map{
-    margin-top: 20px;
+.map {
+  margin-top: 20px;
 }
 
-* --- REVIEWS SECTION --- */
-.review-summary-container {
-    max-width: 100%;
-    margin: 20px auto;
-    padding: 30px 20px;
-    background-color: white;
-    border-radius: 4px;
+* --- REVIEWS SECTION --- */ .review-summary-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 4px;
 }
 
 .reviews-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
 
 .section-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
 }
 
 .review-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .review-link {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    color: #ffffff;
-    padding: 5px 0;
-    border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
 }
 
-
-
 .action-button {
-    padding: 10px 15px;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .action-button .icon {
-    margin-right: 5px;
-    font-size: 16px;
+  margin-right: 5px;
+  font-size: 16px;
 }
 
 .share-insider {
-    background-color: white;
-    color: #004d40;
-    border: 1px solid #004d40;
+  background-color: white;
+  color: #004d40;
+  border: 1px solid #004d40;
 }
 
 .write-review {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .review-content {
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
 }
 
 .overall-rating {
-    flex-shrink: 0;
-    width: 120px;
-    text-align: center;
-    padding-right: 20px;
-    border-right: 1px solid #eee;
+  flex-shrink: 0;
+  width: 120px;
+  text-align: center;
+  padding-right: 20px;
+  border-right: 1px solid #eee;
 }
 
 .overall-rating .score {
-    font-size: 48px;
-    font-weight: bold;
-    color: #ffffff;
-    display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  display: block;
 }
 
 .overall-rating .descriptor {
-    font-size: 18px;
-    font-weight: 600;
-    color: #ffffff;
-    display: block;
-    margin-top: -10px;
-    margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 5px;
 }
 
 .overall-rating .stars {
-    color: #e3e709;
-    font-size: 16px;
-    display: block;
+  color: #e3e709;
+  font-size: 16px;
+  display: block;
 }
 
 .overall-rating .count {
-    font-size: 14px;
-    color: #ffffff;
-    display: block;
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
 }
 
 .breakdown-bars {
-    flex: 1;
-    max-width: 300px;
-    margin-right: 30px;
+  flex: 1;
+  max-width: 300px;
+  margin-right: 30px;
 }
 
 .bar-row {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .bar-row .label {
-    width: 70px;
-    color: #ffffff;
+  width: 70px;
+  color: #ffffff;
 }
 
 .bar-wrapper {
-    flex-grow: 1;
-    height: 6px;
-    background-color: #e0e0e0;
-    border-radius: 3px;
-    margin: 0 10px;
+  flex-grow: 1;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  margin: 0 10px;
 }
 
 .bar {
-    height: 100%;
-    background-color: #06d006;
-    border-radius: 3px;
+  height: 100%;
+  background-color: #06d006;
+  border-radius: 3px;
 }
 
 .bar-row .bar-count {
-    width: 30px;
-    text-align: right;
-    color: #ffffff;
+  width: 30px;
+  text-align: right;
+  color: #ffffff;
 }
 
 .category-ratings {
-    flex: 2;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px 30px;
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 30px;
 }
 
 .rating-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .category-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    width: 100px;
-    flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 100px;
+  flex-shrink: 0;
 }
 
 .category-bar-wrapper {
-    flex-grow: 1;
-    height: 8px;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-    margin: 0 15px;
+  flex-grow: 1;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 0 15px;
 }
 
 .category-bar {
-    height: 100%;
-    background-color: #06d006;
-    border-radius: 4px;
+  height: 100%;
+  background-color: #06d006;
+  border-radius: 4px;
 }
 
 .category-score {
-    font-size: 14px;
-    font-weight: 700;
-    color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.relavent{
-    margin-top: 70px;
+.relavent {
+  margin-top: 70px;
 }
 /* ------------------------------------------- */
 /* RESPONSIVE DESIGN (Mobile)        */
 /* ------------------------------------------- */
 
 @media (max-width: 768px) {
-    .photo-video-grid {
-        /* On smaller screens, stack the items vertically */
-        grid-template-columns: 1fr; /* Single column */
-        gap: 10px; /* Increase gap for clarity when stacking */
-        margin: 10px;
-    }
+  .photo-video-grid {
+    /* On smaller screens, stack the items vertically */
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Increase gap for clarity when stacking */
+    margin: 10px;
+  }
 
-    .main-image-container {
-        /* Adjust height for mobile view, making it taller than the sidebar total */
-        min-height: 250px;
-    }
+  .main-image-container {
+    /* Adjust height for mobile view, making it taller than the sidebar total */
+    min-height: 250px;
+  }
 
-    .sidebar-thumbnails {
-        /* When stacked, the sidebar items should just fill their content width, not a fixed height */
-        grid-template-rows: repeat(3, 150px); /* Give each thumbnail a fixed height for mobile */
-        min-height: auto;
-    }
+  .sidebar-thumbnails {
+    /* When stacked, the sidebar items should just fill their content width, not a fixed height */
+    grid-template-rows: repeat(
+      3,
+      150px
+    ); /* Give each thumbnail a fixed height for mobile */
+    min-height: auto;
+  }
 
-    /* Optional: Ensure thumbnail overlays look good on smaller screens */
-    .thumbnail-overlay {
-        padding: 8px 12px;
-    }
+  /* Optional: Ensure thumbnail overlays look good on smaller screens */
+  .thumbnail-overlay {
+    padding: 8px 12px;
+  }
 
-    .reviews-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .review-actions {
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
-    
-    .review-content {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        border-top: 1px solid #eee;
-        padding-top: 20px;
-    }
+  .review-actions {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
 
-    .overall-rating {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 15px;
-        width: 100%;
-        text-align: left;
-    }
+  .review-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
 
-    .overall-rating .score {
-        display: inline-block;
-        margin-right: 15px;
-    }
-    
-    .overall-rating .descriptor,
-    .overall-rating .stars,
-    .overall-rating .count {
-        display: inline-block;
-        margin-top: 0;
-    }
-    
-    .breakdown-bars {
-        max-width: 100%;
-        width: 100%;
-        margin-right: 0;
-    }
+  .overall-rating {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: left;
+  }
 
-    .category-ratings {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
+  .overall-rating .score {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .overall-rating .descriptor,
+  .overall-rating .stars,
+  .overall-rating .count {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .breakdown-bars {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .category-ratings {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+  }
+  .check-availability-button {
+    font-size: 14px;
+  }
 }

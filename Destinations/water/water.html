@@ -92,7 +92,7 @@
         </video>
         <div class="outdoor-hero-content">
             <h1 style="font-family: 'Montserrat', sans-serif;">Explore the water theme</h1>
-            <div style="display: flex; justify-content: space-between; width: 100%;">
+            <div class="waterText" style="display: flex; justify-content: space-between; width: 100%;">
                 <p style="font-family: 'Montserrat', sans-serif;
                  font-weight: 500;
                   margin-top: 8px;">
@@ -107,7 +107,7 @@
         </div>
     </div>
     
-    <div style="
+    <div class="headCategoryWater" style="
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -466,7 +466,7 @@
             </div>
         </div>
 
-        <div class="hotel">
+        <div class="hotel" id="Borgo">
             <div class="hotelDes">
                 <h1 style="font-family: 'Nunito Sans', sans-serif;">Borgo Santandrea</h1>
                 <div style="display: flex; gap: 3px; margin-top: 5px;">
@@ -567,10 +567,10 @@
         <div class="UserHeadLine">
             <h1 style="font-size: 3.3rem; font-family: 'Nunito Sans';">Traveler's Experience
             </h1>
-            <p style="font-size: 18px; font-family: 'Montserrat', sans-serif;">Hear from our adventurers who embraced the wild and 
+            <p style="font-size: 1.1rem; font-family: 'Montserrat', sans-serif;">Hear from our adventurers who embraced the wild and 
                 returned with unforgettable stories.
             </p>
-            <p style="font-size: 18px; margin-top: 15px;
+            <p id="userWord" style="font-size: 1.1rem; margin-top: 15px;
              font-family: 'Montserrat'; font-style: italic; color: rgb(17, 17, 119)">
              Mr.Bora Red - "I found the Minnewanka trip to be a breathtaking adventure. 
              I enjoyed the scenic cruise on the deep turquoise waters surrounded by the Rockies. 
@@ -602,7 +602,10 @@
         </p>
       </div>
 
-        <footer class="footer">
+        <footer 
+        style="box-sizing: border-box;
+    width: calc(100% + 70px);"
+        class="footer">
             <div class="overlay"></div>
         <div class="footer-logo">
             <a href="/index.html" style="font-family: 'Nunito Sans', sans-serif;">TosTrip</a>

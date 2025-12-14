@@ -55,6 +55,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  border-radius: 10px;
 }
 
 .tour-card:hover {
@@ -166,6 +167,62 @@ body {
   background-color: #007bff; /* Bright blue color */
   transform-origin: left;
 }
+
+.hotelwrapper {
+  width: 100%;
+  height: 70vh;
+  margin-top: 150px;
+}
+.hotel {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+  margin-top: 25px;
+}
+.hotelpre {
+  flex: 2;
+  overflow: hidden;
+}
+.hotelDes {
+  flex: 1;
+  padding: 30px;
+}
+.hotelText {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.offerDes {
+  display: flex;
+  gap: 4px;
+  margin-top: 8px;
+}
+.Detail {
+  display: flex;
+  justify-content: space-between;
+}
+.DetailBtn button {
+  width: 110px;
+  height: 35px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.DetailBtn button:hover {
+  cursor: pointer;
+}
+
 .UserExp{
   width: 100%;
   height: 500px;
@@ -243,8 +300,135 @@ UerImg img{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .tour-grid {
     grid-template-columns: 1fr;
   }
+  .outdoor-hero-content h1 {
+    font-size: 16px;
+  }
+  .outdoorText {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-right: 25px;
+  }
+  .outdoorText p {
+    font-size: 16px;
+    padding-right: 25px;
+  }
+  .headCategoryOutdoor h1 {
+    font-size: 22px;
+  }
+  .hotel {
+    flex-direction: column;
+    height: auto;
+    margin-top: 15px;
+    padding: 0 10px;
+    padding-top: 10px;
+  }
+  .hotelpre {
+    flex: none;
+    width: 100%;
+    height: 300px;
+  }
+  .hotelDes {
+    flex: none;
+    width: 100%;
+    padding: 20px 0 30px 0;
+  }
+
+  .hotelText p {
+    font-size: 16px;
+  }
+  .DetailBtn button {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+  .offer {
+    margin-top: 25px;
+  }
+  .hotel #Borgo {
+    display: flex;
+    flex-direction: row;
+  }
+  #Borgo {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+  .hotel #Borgo {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .UserExp {
+    flex-direction: column;
+    height: auto;
+    margin-top: 1900px;
+    padding: 0 15px;
+    padding-top: 20px;
+  }
+
+  .UserHeadLine {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .UserHeadLine h1 {
+    text-align: center;
+    font-size: 2rem !important;
+  }
+
+  .UserHeadLine p:nth-child(2) {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .UserHeadLine p:nth-child(3) {
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: "Montserrat";
+    font-style: italic;
+    color: rgb(17, 17, 119);
+  }
+
+  .fullReview {
+    justify-content: space-around;
+    padding-right: 0;
+    transform: translateY(0);
+    width: 90%;
+    margin: 15px auto 0 auto;
+  }
+
+  .UserImg {
+    flex: none;
+    width: 100%;
+    height: 300px;
+    margin: 30px auto 20px auto;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  .UserImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .caption-letter {
+  font-family: "Nunito", sans-serif;
+  position: absolute;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  z-index: 10;
+  margin-left: 60px;
+}
 }
