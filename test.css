@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Optional: for demonstration background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hero-container {
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: 400px; /* Base height for the banner */
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.image-content {
+    flex: 1;
+    background-image: url('Screenshot 2025-12-14 132332.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+}
+
+.explore-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #c9302c;
+}
+
+@media (max-width: 768px) {
+    .TypeTrip {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .box-text {
+        order: 2; /* Text comes after image on mobile */
+        min-height: 200px;
+        padding: 40px 20px;
+    }
+
+    .image-content {
+        order: 1; /* Image comes first on mobile */
+        min-height: 300px;
+        flex: none;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .explore-btn {
+        padding: 8px 25px;
+        font-size: 0.9em;
+    }
+}

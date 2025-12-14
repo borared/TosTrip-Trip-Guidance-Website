@@ -114,11 +114,11 @@
 
     <div class="searchWrapper">
       <div>
-        <div>
+        <div id="mostRec">
           <h1 style="color: white; font-weight: 500; font-family: 'Nunito Sans', sans-serif;">Most Recommended</h1>
         </div>
-        <div class="carousel-card card-1">
-          <video autoplay muted loop playsinline preload="metadata" style="width: 660px">
+        <div class="carousel-card card-1" style="border-radius: 12px;" id="AngkorWat">
+          <video autoplay muted loop playsinline preload="metadata" style="width: 100%; height: 100%;">
             <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764408155/Untitled_xo0smi.mp4" />
           </video>
           <div class="card-overlay">
@@ -139,7 +139,7 @@
           <h1 id="Where">Where to go?</h1>
         </div>
         <div class="searchInput">
-          <div class="searchIcon">
+          <div class="searchIcon" style="margin-top: 5px;">
             <i class="bxr bx-search-big" style="color: rgb(0, 0, 0)"></i>
           </div>
           <input type="text" placeholder="Search place to go, hotel, restaurant,..." />
@@ -165,280 +165,86 @@
     </div>
 
     <hr style="margin-top: 120px" />
-
-    <div class="container_Top">
-      <div class="header">
-        <h1>Top World Wonder <br> Explore the <span style="font-family: 'Rosemartin Custom' ;">Experience</span></h1>
-      </div>
-      <div class="carousel-container">
-        <div class="carousel-track">
-          <div class="carousel-card card-1">
-            <img src="https://res.cloudinary.com/dkshzwacm/image/upload/v1764169614/a_v3lidv.jpg" alt="Angkor Wat"
-              width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Angkor Wat</div>
-              <div class="card-description">Siem Reap - Cambodia</div>
-            </div>
-          </div>
-          <div class="carousel-card card-4">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338116/image_processing20190924-4-bh66nl_jto75t.jpg"
-              alt="Japan" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Great wall of china</div>
-              <div class="card-description">China</div>
-            </div>
-          </div>
-          <div class="carousel-card card-5">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764250624/licensed-image_kf55b1.jpg"
-              alt="Chinese" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Taj Mahal</div>
-              <div class="card-description">Inida</div>
-            </div>
-          </div>
-          <div class="carousel-card card-6">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764341443/o-santuario-cristo-redentor_cnyzzd.jpg"
-              alt="Christ the redeemer" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Christ the redeemer</div>
-              <div class="card-description">Rio-Brazil</div>
-            </div>
-          </div>
-          <div class="carousel-card card-7">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249313/Petra-7-Wonders-of-the-World_gba1yj.jpg"
-              alt="Door" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Petra</div>
-              <div class="card-description">Southern Jordan</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338260/39f0fb4c9a45ae81f22b086f55ba8fd4_kocq7m.jpg"
-              alt="England" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Colosseum</div>
-              <div class="card-description">Italy</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249339/Pyramids-at-Giza_dbsoxu.avif"
-              alt="Egypt" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Pyramid of Giza</div>
-              <div class="card-description">Egypt</div>
-            </div>
-          </div>
-          <div class="carousel-card card-1">
-            <img src="https://res.cloudinary.com/dkshzwacm/image/upload/v1764169614/a_v3lidv.jpg" alt="Angkor Wat"
-              width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Angkor Wat</div>
-              <div class="card-description">Siem Reap - Cambodia</div>
-            </div>
-          </div>
-          <div class="carousel-card card-4">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338116/image_processing20190924-4-bh66nl_jto75t.jpg"
-              alt="Japan" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Great wall of china</div>
-              <div class="card-description">China</div>
-            </div>
-          </div>
-          <div class="carousel-card card-5">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764250624/licensed-image_kf55b1.jpg"
-              alt="Chinese" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Taj Mahal</div>
-              <div class="card-description">Inida</div>
-            </div>
-          </div>
-          <div class="carousel-card card-6">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764341443/o-santuario-cristo-redentor_cnyzzd.jpg"
-              alt="Christ the redeemer" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Christ the redeemer</div>
-              <div class="card-description">Rio-Brazil</div>
-            </div>
-          </div>
-          <div class="carousel-card card-7">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249313/Petra-7-Wonders-of-the-World_gba1yj.jpg"
-              alt="Door" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Petra</div>
-              <div class="card-description">Southern Jordan</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338260/39f0fb4c9a45ae81f22b086f55ba8fd4_kocq7m.jpg"
-              alt="England" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Colosseum</div>
-              <div class="card-description">Italy</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249339/Pyramids-at-Giza_dbsoxu.avif"
-              alt="Egypt" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Pyramid of Giza</div>
-              <div class="card-description">Egypt</div>
-            </div>
-          </div>
-          <div class="carousel-card card-1">
-            <img src="https://res.cloudinary.com/dkshzwacm/image/upload/v1764169614/a_v3lidv.jpg" alt="Angkor Wat"
-              width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Angkor Wat</div>
-              <div class="card-description">Siem Reap - Cambodia</div>
-            </div>
-          </div>
-          <div class="carousel-card card-4">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338116/image_processing20190924-4-bh66nl_jto75t.jpg"
-              alt="Japan" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Great wall of china</div>
-              <div class="card-description">China</div>
-            </div>
-          </div>
-          <div class="carousel-card card-5">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764250624/licensed-image_kf55b1.jpg"
-              alt="Chinese" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Taj Mahal</div>
-              <div class="card-description">Inida</div>
-            </div>
-          </div>
-          <div class="carousel-card card-6">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764341443/o-santuario-cristo-redentor_cnyzzd.jpg"
-              alt="Christ the redeemer" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Christ the redeemer</div>
-              <div class="card-description">Rio-Brazil</div>
-            </div>
-          </div>
-          <div class="carousel-card card-7">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249313/Petra-7-Wonders-of-the-World_gba1yj.jpg"
-              alt="Door" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Petra</div>
-              <div class="card-description">Southern Jordan</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764338260/39f0fb4c9a45ae81f22b086f55ba8fd4_kocq7m.jpg"
-              alt="England" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Colosseum</div>
-              <div class="card-description">Italy</div>
-            </div>
-          </div>
-          <div class="carousel-card card-3">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764249339/Pyramids-at-Giza_dbsoxu.avif"
-              alt="Egypt" width="620" height="400" loading="lazy" />
-            <div class="card-overlay">
-              <div class="card-title">Pyramid of Giza</div>
-              <div class="card-description">Egypt</div>
-            </div>
-          </div>
+<div>
+  <div class="container-wonder">
+    
+        <div class="header-wonder">
+            <h1 style="font-family: 'Nunito Sans', sans-serif;">Discover Top World Wonder</h1>
+            <p class="subtitle">Explore breathtaking destinations around the world.</p>
         </div>
-      </div>
-      <div class="subtitle-container">
-        <div class="subtitle-track">
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
-          <p class="subtitle-text">
-            Hello សួស្តី 你好 नमस्ते こんにちは Bonjour Halo olá Ciao
-            안녕하세요
-          </p>
+        
+        <div class="content-wrapper">
+            <div class="cards-section">
+                <div class="cards-wrapper">
+                    <!-- Cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="description-section" id="description-section">
+                <!-- Description content will be inserted here by JavaScript -->
+            </div>
         </div>
-      </div>
+        
+        <div class="indicators" style="margin-top: 55px;">
+            <!-- Indicators will be inserted here by JavaScript -->
+        </div>
     </div>
-    <div style="display: flex; justify-content: space-between; margin-top: 25px;">
-      <i class='bx-arrow-to-left-stroke' style="color: white; font-size: 35px;"></i>
-      <hr>
-      <p style="color: white; font-size: 25px;">Scroll</p>
-      <hr>
-      <i class='bxr  bx-arrow-to-right-stroke' style="color: white; font-size: 35px;"></i>
-    </div>
+  
+    <hr style="margin-top: 70px;">
 
-    <div class="TypeTrip">
-      <h1 id="TypeTrips">
-        Explore <span style="font-family: 'Rosemartin Custom' ;">Destinations</span> by interest <br />
-        If it exists, we provide it.
-      </h1>
-      <div class="box">
-        <div class="boxText">
-          <h1 style="color: black">OUTDOOR</h1>
-          <a href="/Destinations/Outdoor/outdoor.html">Explore</a>
-        </div>
-        <video autoplay loop muted playsinline preload="metadata" style="width: 100%; height: 100%">
-          <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764429134/Untitled_1_svfghd.mp4" />
-        </video>
-      </div>
-      <div class="box">
-        <video autoplay loop muted playsinline preload="metadata">
-          <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764475842/Water_qny9qd.mp4" />
-        </video>
-        <div class="boxText">
-          <h1 style="color: black">WATER</h1>
-          <a href="/Destinations/water/water.html">Explore</a>
-        </div>
-      </div>
-      <div class="box">
-        <div class="boxText">
-          <h1 style="color: black">CITY</h1>
-          <a href="/Destinations/City/city.html">Explore</a>
-        </div>
-        <video autoplay loop muted playsinline preload="metadata" style="width: 75%; height: 100%">
-          <source
-            src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764485601/0cfd0e4aab3f83776ff3c62a5395cf5d_nt2bul.mp4" />
-        </video>
-      </div>
+
+    <div class="Type-Head">
+      <h1>Explore Destinations by interest</h1>
     </div>
     <div class="TypeTrip">
+        <div class="box">
+            <div class="box-text">
+                <h1>OUTDOOR</h1>
+                <a href="/Destinations/Outdoor/outdoor.html" class="explore-btn">Explore</a>
+            </div>
+            <div class="image-content">
+              
+            </div>
+        </div>
+    </div>
+    <div class="TypeTrip">
+        <div class="box"> 
+            <div class="image-content" id="box-2">
+             
+            </div>
+            <div class="box-text">
+                <h1>WATER</h1>
+                <a href="/Destinations/water/water.html" class="explore-btn">Explore</a>
+            </div>
+        </div>
+    </div>
+    <div class="TypeTrip">
+        <div class="box">
+            <div class="box-text">
+                <h1>CITY</h1>
+                <a href="/Destinations/City/city.html" class="explore-btn">Explore</a>
+            </div>
+            <div class="image-content" id="box-3">
+
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="Iconic">
       <h1>
         Iconic Places <br />
-        You Need to <span style="font-family: none">SEE</span>
+        You Need to See
       </h1>
       <div id="iconicContainer">
-        <div style="display: flex; gap: 7px; margin-bottom: 7px;">
+        <div class="Iconic-wrap" style="display: flex; gap: 7px; margin-bottom: 7px;">
           <div class="carousel-card card-1" style="flex: 1">
             <img
               src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764496090/ab1d8ebb26490944cd1854a01d89d4f2_xjuzvf.jpg"
               alt="" style="width: 100%" />
             <div class="card-overlay">
               <div class="card-title" style="color: white; font-size: 1.5rem">
-                Reykjavik - Rating: 4.9
+                Reykjavik - 4.9
               </div>
               <div class="card-description" style="margin-top: 5px; font-size: 18px">
                 Iceland
@@ -458,13 +264,13 @@
             </div>
           </div>
         </div>
-        <div style="display: flex; gap:7px; margin-bottom: 7px;">
+        <div class="Iconic-wrap" style="display: flex; gap:7px; margin-bottom: 7px;">
           <div class="carousel-card card-1" style="flex: 1">
             <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764499363/1_h2L9CvEbV4UbXDnso6DE2g_v6ijoz.jpg"
               alt="" style="width: 100%" />
             <div class="card-overlay">
               <div class="card-title" style="color: white; font-size: 1.5rem">
-                Dubai Aquarium & Underwater Zoo - Rating: 4.2
+                Dubai Aquarium & Underwater Zoo - 4.2
               </div>
               <div class="card-description" style="margin-top: 5px; font-size: 18px">
                 Dubai
@@ -476,7 +282,7 @@
               alt="" style="width: 100%" />
             <div class="card-overlay">
               <div class="card-title" style="color: white; font-size: 1.5rem">
-                Statue of Liberty - Rating: 4.5
+                Statue of Liberty - 4.5
               </div>
               <div class="card-description" style="margin-top: 5px; font-size: 18px">
                 United States
@@ -508,17 +314,12 @@
       <div class="container">
       
           <div class="primary-menu">
-              <a href="#" class="active">Featured Hotel Destinations</a>
               <a href="#">Featured Flight Destinations</a>
               <a href="#">Featured Guides</a>
-              <a href="#">Trip.Best Awards</a>
               <a href="#">Popular Activities</a>
-              <a href="#">Trip.com Links</a>
-          </div>
-          <div class="secondary-category">
               <a href="#" class="active">Popular Hotels</a>
-              <a href="#">Car Rentals in Top Cities</a>
           </div>
+      
           <div class="destinations-grid">
               <a href="#" class="destination-link">Hotels in Shanghai</a>
               <a href="#" class="destination-link">Hotels in Hong Kong</a>
@@ -550,7 +351,9 @@
         Get unbiased reviews, essential booking tools, and deep local insights
         to unlock exclusive rewards and save on every trip ensuring your best adventure yet.</p>
     </div>
-    <footer class="footer">
+    <footer class="footer"
+    style="box-sizing: border-box;
+    width: calc(100% + 70px);">
       <div class="overlay"></div>
       <div class="footer-logo">
         <a href="#" style="font-family: 'Nunito Sans', sans-serif;">TosTrip</a>
@@ -614,9 +417,13 @@
       </div>
     </footer>
   </div>
-  <script src="script.js"></script>
+  
+  <script src="searchToggle.js"></script>
+  <script src="ScrollBar.js"></script>
   <script src="SeeMoreScript.js"></script>
   <script src="scriptRefresh.js"></script>
+  <script src="wonderSlide.js"></script>
+  
 </body>
 
 </html>

@@ -14,10 +14,10 @@ const destinations = [
             "Climb to the top level of the central temple structure",
             "Discover the Bayon Temple with its enigmatic smiling stone faces"
         ],
-        bestTime: "November to February (cool and dry season)",
-        flightTime: "20-24 hrs from New York to Siem Reap (via major hubs)",
+        bestTime: "November to February ",
+        flightTime: "20-24 hrs from New York to Siem Reap ",
         culture: "Khmer, Hindu-Buddhist",
-        currency: "Cambodian Riel (KHR), US Dollar (USD) widely accepted"
+        currency: "Cambodian Riel (KHR), US Dollar (USD) "
     },
     {
         id: 2,
@@ -158,7 +158,6 @@ const destinations = [
 const cardsWrapper = document.querySelector('.cards-wrapper');
 const descriptionSection = document.getElementById('description-section');
 const indicatorsContainer = document.querySelector('.indicators');
-const body = document.body;
 
 // State variables
 let currentIndex = 0;
@@ -170,7 +169,6 @@ function init() {
     createIndicators();
     updateCards();
     updateDescription();
-    updateBackground();
     startAutoPlay();
 
     // Add keyboard navigation
@@ -186,7 +184,7 @@ function createCards() {
 
         card.innerHTML = `
             <img src="${destination.image}" alt="${destination.name}">
-            <div class="card-overlay">
+            <div class="card-darker">
                 <h3>${destination.name}</h3>
                 <div class="card-price">From ${destination.price}</div>
             </div>
@@ -300,11 +298,7 @@ function updateDescription() {
     `;
 }
 
-// Update background image based on current card
-function updateBackground() {
-    const currentDestination = destinations[currentIndex];
-    body.style.backgroundImage = `url('${currentDestination.image}')`;
-}
+
 
 // Go to a specific card
 function goToCard(index) {
