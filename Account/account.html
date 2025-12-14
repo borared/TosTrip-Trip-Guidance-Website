@@ -23,32 +23,62 @@
 
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="/index.html">TosTrip</a>
-            <i class='bxr  bx-plane-alt' style="color: white;"></i>
-        </div>
-        <div class="navigation">
-            <a href="#TypeTrips">Destinations</a>
-            <a>Popular</a>
-            <a>Review</a>
-        </div>
-        <div class="Profile_Search">
-            <div class="nav-search-wrapper">
-                <i class="bxr bx-search-big" id="searchToggle" style="position: relative; z-index: 100"></i>
-                <div class="nav-search-bar" id="navSearchBar">
-                    <input type="text" placeholder="Search" />
+    <header class="navbar">
+    <div class="logo">
+        <a href="/index.html" style="font-family: 'Nunito Sans',sans-serif;">TosTrip</a>
+          <i class='bxr  bx-plane-alt' style="color: white;"></i>
+    </div>
+
+    <ul class="navigation">
+        <li><a href="#">Popular</a></li>
+
+        <li>
+            <a href="#">Destination</a>
+            
+            <div class="dropdown-menu">
+                <a href="/Destinations/Outdoor/outdoor.html">
+                  <div class="menu-item">
+                     <i class='bxr  bx-mountain-peak' style="font-size: 22px; color: black"></i> 
+                      <div>
+                          <h3>Outdoor</h3>
+                          <p>Well-planned, memorable, and high-value adventures for outdoor enthusiasts and travel groups.</p>
+                      </div>
+                  </div>
+                </a>
+                <a href="/Destinations/water/water.html">
+                  <div class="menu-item">
+                      <i class='bxr  bx-island' style="font-size: 22px; color: black"></i>
+                      <div>
+                          <h3>Water</h3>
+                          <p>Guided expeditions, sailing charters, and beach escapes for exploring marine biodiversity and coastal culture.</p>
+                      </div>
+                  </div>
+                </a>
+                <a href="/Destinations/City/city.html">
+                  <div class="menu-item">
+                      <i class='bxr  bx-apartment' style="font-size: 22px; color: black"></i>
+                      <div>
+                          <h3>City</h3>
+                          <p>Private gallery tours, neighborhood street art exploration, and workshops focused on local crafts and modern design.</p>
+                      </div>
+                  </div>
+                </a>
                 </div>
-            </div>
-            <i class="bxr bx-user"></i>
-            <label class="burger" for="burger">
-                <input type="checkbox" id="burger" />
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
-    </nav>
+        </li>
+
+        <li><a href="/Map/map.html">Map</a></li>
+        <!-- <li><a href="#">Company</a></li> -->
+    </ul>
+
+    <div class="Profile_Search">
+        <i class="bxr bx-search-big"></i>
+        <a href="/Account/account.html"><i class="bx bx-user"></i></a> 
+    </div>
+    <div class="nav-search-bar">
+        <input type="text" placeholder="Search...">
+        <i class="bx bx-x"></i>
+    </div>
+</header>
     <div class="main-container">
         <video autoplay muted loop class="background-video"
             style="width: 100%; height: 100%; object-fit: cover; z-index: 1; position: absolute;">
