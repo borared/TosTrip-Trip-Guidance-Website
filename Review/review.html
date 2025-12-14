@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Reviews</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">TosTrip Review</h1>
+        <p class="page-subtitle">See what our travelers are saying about their TosTrip experience</p>
+        
+        <div class="reviews-container">
+            
+            <section class="featured-review">
+                <h2 class="section-title">Featured Review</h2>
+                <div class="featured-card">
+                    <div class="user-info">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="user-avatar">
+                        <div class="user-details">
+                            <h3 class="user-name">Michael Johnson</h3>
+                            <p class="trip-date">Trip Date: June 15, 2024</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">4.5/5</span>
+                    </div>
+                    
+                    <div class="review-content">
+                        <h4 class="review-title">Amazing Mountain Adventure!</h4>
+                        <p class="review-text">This trip exceeded all expectations. The guides were knowledgeable, the scenery was breathtaking, and the overall organization was impeccable. The hiking trails were well-maintained and suitable for various skill levels. I especially enjoyed the sunrise hike to the summit - a memory I'll cherish forever!</p>
+                    </div>
+                    
+                    <div class="review-footer">
+                        <span class="helpful-count"><i class="fas fa-thumbs-up"></i> 42 people found this helpful</span>
+                        <span class="review-date">Posted: July 2, 2024</span>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section class="other-reviews">
+                <div class="reviews-header">
+                    <h2 class="section-title">Other Traveler Reviews</h2>
+                    <div class="sort-options">
+                        <label for="sort-select">Sort by:</label>
+                        <select id="sort-select">
+                            <option value="recent">Most Recent</option>
+                            <option value="rating">Highest Rating</option>
+                            <option value="helpful">Most Helpful</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="reviews-grid" id="reviews-grid">
+                </div>
+                
+                <div class="load-more-container">
+                    <button id="load-more" class="load-more-btn">Load More Reviews</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script src="review.js"></script>
+</body>
+</html>
