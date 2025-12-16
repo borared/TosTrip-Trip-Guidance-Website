@@ -762,7 +762,7 @@ body {
   background: url(https://res.cloudinary.com/dicrvjstp/image/upload/v1765469666/techo-international-airport-cambodia-foster-plus-partners_2_darjpb.jpg)
     no-repeat center center;
   background-size: cover;
-  height: auto;
+  height: 100vh;
   padding: 50px 32px;
   margin-top: 45px;
   width: 1520px;

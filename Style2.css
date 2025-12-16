@@ -415,6 +415,93 @@
   font-size: 1.1rem;
 }
 
+/* Iconic Places */
+.iconic-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 10px;
+}
+.iconic-large .iconic-image {
+    background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884274/15-Iconic-Places-in-the-World_Eiffel-Tower-Paris-France_rh2010_Adobe-Stock-Photo_lgydnh.jpg');
+    min-height: 100%;
+}
+.iconic-small .iconic-image {
+    background-image: url('https://via.placeholder.com/600x200?text=Hillside+Farm');
+}
+.iconic-x-small .iconic-image {
+    background-image: url('https://via.placeholder.com/300x200?text=City+View');
+}
+
+
+.property-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 100%;
+    width: 100%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bottom-right-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.iconic {
+    background: white;
+    background: #464646;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.iconic-info {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.1));
+}
+
+.iconic-info h3 {
+    margin: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.iconic-info p {
+    margin: 5px 0 0;
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+.iconic-price {
+    font-size: 1.2em;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.iconic-small .iconic-image {
+    height: 100%;
+    min-height: 420px;
+}
+
+.iconic-x-small .iconic-image {
+    padding-bottom: 75%;
+}
+
+
+
 /* Reviews Container Layout */
 .reviews-container {
   display: flex;
@@ -700,6 +787,8 @@
 
 
 
+
+
 /* Responsive styles */
 @media (max-width: 1224px) {
   .content-wrapper {
@@ -751,6 +840,13 @@
     gap: 20px;
   }
 }
+/* Adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .destinations-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .reviews-container {
     flex-direction: column;
@@ -850,16 +946,6 @@
   .page-title {
     font-size: 2rem;
   }
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 1024px) {
-  .destinations-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
   .destinations-grid {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 10px;
@@ -872,7 +958,23 @@
     gap: 25px;
     font-size: 22px;
   }
+  .property-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .right-column {
+        gap: 10px;
+    }
+
+    .bottom-right-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }
+
+
+
 
 @media (max-width: 576px) {
   .destinations-grid {

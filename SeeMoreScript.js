@@ -3,36 +3,51 @@ const arrow = document.getElementById("seeMoreArrow");
 const extraDiv = document.getElementById("extraContent");
 
 const extraCardsHTML = `
-<div class="Iconic-wrap" style="display: flex; gap: 7px; margin-bottom: 7px;">
-    <div class="carousel-card card-1" style="flex:1;">
-        <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764507611/Screenshot_2025-11-30_183739_jhngeb.png" style="width: 100%;">
-        <div class="card-overlay">
-            <div class="card-title" style="color: white; font-size: 1.5rem;">Toul Eiffel - 4.6</div>
-            <div class="card-description" style="margin-top: 5px; font-size: 18px;">France</div>
-        </div>
-    </div>
-    <div class="carousel-card card-1" style="flex:1;">
-        <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764508312/_methode_times_prod_web_bin_a4a67f98-49b4-49df-91e9-6767273a8720_ofo1o6.jpg" style="width: 100%;">
-        <div class="card-overlay">
-            <div class="card-title" style="color: white; font-size: 1.5rem;">Kinkaku-ji - 4.5</div>
-            <div class="card-description" style="margin-top: 5px; font-size: 18px;">Japan</div>
-        </div>
-    </div>
-</div>
+<div class="property-grid" style="margin-top: 10px">
+    
 
-<div class="Iconic-wrap" style="display: flex; gap: 7px; margin-bottom: 7px;">
-    <div class="carousel-card card-1" style="flex:1;">
-        <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764508604/unnamed_lhjjiy.webp" style="width: 100%;">
-        <div class="card-overlay">
-            <div class="card-description" style="margin-top: 5px; font-size: 18px;">China</div>
+    <div class="right-column">
+        <div class="iconic iconic-small">
+            <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764499363/1_h2L9CvEbV4UbXDnso6DE2g_v6ijoz.jpg');"></div>
+            <div class="iconic-info">
+                <h3>Fazendas Boi Gordo</h3>
+                <p>Conceição do Araguaia (PA)</p>
+            </div>
+
+        </div>
+
+        <div class="bottom-right-grid">
+            <div class="iconic iconic-x-small">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764493060/Statue_of_liberty_ah6emo.webp');">
+
+                </div>
+                <div class="iconic-info">
+                    <h3>Fazenda Olavo Simões</h3>
+                </div>
+
+            </div>
+
+            <div class="iconic iconic-x-small">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884275/AdobeStock_152886744-scaled_uxpp8l.jpg');">
+
+                </div>
+                <div class="iconic-info">
+                    <h3>Beautiful House</h3>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div class="carousel-card card-1" style="flex:1;">
-        <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764508740/323101_pykx7u.jpg" style="width: 100%;">
-        <div class="card-overlay">
-            <div class="card-title" style="color: white; font-size: 1.5rem;">New York City</div>
-            <div class="card-description" style="margin-top: 5px; font-size: 18px;">United States</div>
+    <div class="iconic iconic-large">
+        <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884274/15-Iconic-Places-in-the-World_Eiffel-Tower-Paris-France_rh2010_Adobe-Stock-Photo_lgydnh.jpg');">
+
         </div>
+        <div class="iconic-info">
+            <h3>Fazenda Cristal</h3>
+            <p>Cabreúva do Arraiados (PR)</p>
+            <div class="iconic-price">R$ 250.000,00</div>
+        </div>
+
     </div>
 </div>
 `;

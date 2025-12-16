@@ -36,10 +36,16 @@
     </div>
 
     <ul class="navigation">
-        <li><a href="#">Popular</a></li>
+        <li style="display: flex; gap: 5px;">
+          <i class='bxr  bx-fire-alt' style="margin-top: 3px;"></i> 
+          <a href="#">Popular</a>
+        </li>
 
         <li>
-            <a href="#">Destination</a>
+            <div style="display: flex; gap: 5px;">
+               <i class='bxr  bx-trip' style="margin-top: 2px;"></i> 
+              <a href="#">Destination</a>
+            </div>
             
             <div class="dropdown-menu">
                 <a href="/Destinations/Outdoor/outdoor.html">
@@ -72,7 +78,10 @@
                 </div>
         </li>
 
-        <li><a href="/Map/map.html">Map</a></li>
+        <li style="display: flex; gap: 5px;">
+          <i class='bx bx-map-alt' style="margin-top: 2px;"></i>
+          <a href="/Map/map.html">Map</a>
+        </li>
         <!-- <li><a href="#">Company</a></li> -->
     </ul>
 
@@ -265,61 +274,52 @@
         Iconic Places <br />
         You Need to See
       </h1>
-      <div id="iconicContainer">
-        <div class="Iconic-wrap" style="display: flex; gap: 7px; margin-bottom: 7px;">
-          <div class="carousel-card card-1" style="flex: 1">
-            <img
-              src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764496090/ab1d8ebb26490944cd1854a01d89d4f2_xjuzvf.jpg"
-              alt="" style="width: 100%" />
-            <div class="card-overlay">
-              <div class="card-title" style="color: white; font-size: 1.5rem">
-                Reykjavik - 4.9
-              </div>
-              <div class="card-description" style="margin-top: 5px; font-size: 18px">
-                Iceland
-              </div>
-            </div>
-          </div>
-          <div class="carousel-card card-1" style="flex: 1">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764493162/caption_joc0vh.jpg" alt=""
-              style="width: 100%" />
-            <div class="card-overlay">
-              <div class="card-title" style="color: white; font-size: 1.5rem">
-                Las Vegas
-              </div>
-              <div class="card-description" style="margin-top: 5px; font-size: 18px">
-                United States
-              </div>
-            </div>
-          </div>
+      <div class="property-grid">
+    <div class="iconic iconic-large">
+        <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884274/15-Iconic-Places-in-the-World_Eiffel-Tower-Paris-France_rh2010_Adobe-Stock-Photo_lgydnh.jpg');">
+
         </div>
-        <div class="Iconic-wrap" style="display: flex; gap:7px; margin-bottom: 7px;">
-          <div class="carousel-card card-1" style="flex: 1">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764499363/1_h2L9CvEbV4UbXDnso6DE2g_v6ijoz.jpg"
-              alt="" style="width: 100%" />
-            <div class="card-overlay">
-              <div class="card-title" style="color: white; font-size: 1.5rem">
-                Dubai Aquarium & Underwater Zoo - 4.2
-              </div>
-              <div class="card-description" style="margin-top: 5px; font-size: 18px">
-                Dubai
-              </div>
-            </div>
-          </div>
-          <div class="carousel-card card-1" style="flex: 1">
-            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764493060/Statue_of_liberty_ah6emo.webp"
-              alt="" style="width: 100%" />
-            <div class="card-overlay">
-              <div class="card-title" style="color: white; font-size: 1.5rem">
-                Statue of Liberty - 4.5
-              </div>
-              <div class="card-description" style="margin-top: 5px; font-size: 18px">
-                United States
-              </div>
-            </div>
-          </div>
+        <div class="iconic-info">
+            <h3>Fazenda Cristal</h3>
+            <p>Cabreúva do Arraiados (PR)</p>
+            <div class="iconic-price">R$ 250.000,00</div>
         </div>
-      </div>
+
+    </div>
+
+    <div class="right-column">
+        <div class="iconic iconic-small">
+            <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764499363/1_h2L9CvEbV4UbXDnso6DE2g_v6ijoz.jpg');"></div>
+            <div class="iconic-info">
+                <h3>Fazendas Boi Gordo</h3>
+                <p>Conceição do Araguaia (PA)</p>
+            </div>
+
+        </div>
+
+        <div class="bottom-right-grid">
+            <div class="iconic iconic-x-small">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764493060/Statue_of_liberty_ah6emo.webp');">
+
+                </div>
+                <div class="iconic-info">
+                    <h3>Fazenda Olavo Simões</h3>
+                </div>
+
+            </div>
+
+            <div class="iconic iconic-x-small">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884275/AdobeStock_152886744-scaled_uxpp8l.jpg');">
+
+                </div>
+                <div class="iconic-info">
+                    <h3>Beautiful House</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
       <div id="extraContent" style="display: none"></div>
 
