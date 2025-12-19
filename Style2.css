@@ -942,3 +942,6 @@
     align-items: flex-start;
   }
 }
+@media (max-width: 384px) {
+  
+}

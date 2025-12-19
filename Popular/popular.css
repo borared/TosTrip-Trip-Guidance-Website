@@ -1,0 +1,173 @@
+.container-popular {
+  padding: 40px;
+  min-width: 100%;
+  box-sizing: border-box;
+  width: calc(100% + 70px);
+  margin-left: -40px;
+}
+.popular-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.seeMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.seeMore a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.seeMore:hover {
+  background-color: #414040;
+  transition: all 0.3s ease-in-out;
+}
+.popular-scroll-area {
+  display: flex;
+  gap: 5px;
+}
+
+.popular-item {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 600px;
+}
+
+.popular-item img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+
+.popular-content {
+  padding: 15px;
+}
+
+.popular-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+
+.popular-content p {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.Offer{
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 25px;
+}
+.Offer h1{
+    margin-bottom: 20px;
+}
+.Offer .Offer-banner{
+    background-color: white;
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766117883/Offer_uhyeey.jpg') no-repeat center center;
+    background-size: cover;
+}
+.Offer .Offer-banner:hover{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+.Offer .Resort-banner {
+    background-color: white;
+    width: 100%;
+    height: 550px;
+    border-radius: 15px;
+    background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766126885/5830813_ntaban.jpg') no-repeat center center;
+    background-size: cover;
+}
+.Offer .Resort-banner:hover{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .popular-scroll-area {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    /* Hides the scrollbar on some browsers but keeps functionality */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .popular-scroll-area::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popular-item {
+    /* Ensures the items stay in a single row and take up a set percentage of the viewport */
+    flex: 0 0 75%;
+    /* Add a small margin to the right to visually separate cards and show the next one */
+    margin-right: 15px;
+  }
+
+  .popular-item:last-child {
+    margin-right: 0;
+  }
+  .Offer {
+    font-size: 0.6rem;
+  }
+  .seeMore a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .seeMore {
+    width: 140px;
+  }
+  .popular-head {
+    font-size: 0.6rem;
+  }
+  .Offer .Offer-banner{
+    width: 100%;
+    height: 250px;
+}
+
+}
+
+@media (min-width: 769px) {
+  .popular-scroll-area {
+    /* Allows items to wrap to a new line on larger screens */
+    flex-wrap: wrap;
+    /* Removes the gap from the scroll area and moves it to the items for cleaner wrapping */
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .popular-item {
+    /* Calculate width for 3 columns with space-between behavior */
+    width: calc(33.33% - 14px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 410px) {
+  .popular-item {
+    /* Calculate width for 3 columns with space-between behavior */
+    width: calc(33.33% - 14px);
+    margin-bottom: 20px;
+  }
+  .popular-content p {
+  margin-bottom: 0;
+  font-size: 0.8em;
+  color: #555;
+}
+}

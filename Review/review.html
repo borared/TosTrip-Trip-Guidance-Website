@@ -3,58 +3,657 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Property Grid</title>
-    <link rel="stylesheet" href="review.css">
+    <title>TosTrip: Trip Guidance</title>
+    <link rel="stylesheet" href="city.css">
+    <link rel="stylesheet" href="/Style.css" />
+    <link
+      href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
 </head>
+
 <body>
+    <header class="navbar">
+    <div class="logo">
+        <a href="/index.html" style="font-family: 'Nunito Sans',sans-serif;">TosTrip</a>
+          <i class='bxr  bx-plane-alt' style="color: white;"></i>
+    </div>
 
-    <div class="property-grid">
-        <div class="card card-large">
-            <div class="card-image" style="background-image: url('placeholder-image-1.jpg');">
-                
-            </div>
-            <div class="card-info">
-                <h3>Fazenda Cristal</h3>
-                <p>Cabreúva do Arraiados (PR)</p>
-                <div class="card-price">R$ 250.000,00</div>
-            </div>
+    <ul class="navigation">
+        <li><a href="#">Popular</a></li>
+
+        <li>
+            <a href="#">Destination</a>
             
-        </div>
-
-        <div class="right-column">
-            <div class="card card-small">
-                <div class="card-image" style="background-image: url('placeholder-image-2.jpg');"></div>
-                <div class="card-info">
-                    <h3>Fazendas Boi Gordo</h3>
-                    <p>Conceição do Araguaia (PA)</p>
+            <div class="dropdown-menu">
+                <a href="/Destinations/Outdoor/outdoor.html">
+                  <div class="menu-item">
+                     <i class='bxr  bx-mountain-peak' style="font-size: 22px; color: black"></i> 
+                      <div>
+                          <h3>Outdoor</h3>
+                          <p>Well-planned, memorable, and high-value adventures for outdoor enthusiasts and travel groups.</p>
+                      </div>
+                  </div>
+                </a>
+                <a href="/Destinations/water/water.html">
+                  <div class="menu-item">
+                      <i class='bxr  bx-island' style="font-size: 22px; color: black"></i>
+                      <div>
+                          <h3>Water</h3>
+                          <p>Guided expeditions, sailing charters, and beach escapes for exploring marine biodiversity and coastal culture.</p>
+                      </div>
+                  </div>
+                </a>
+                <a href="/Destinations/City/city.html">
+                  <div class="menu-item">
+                      <i class='bxr  bx-apartment' style="font-size: 22px; color: black"></i>
+                      <div>
+                          <h3>City</h3>
+                          <p>Private gallery tours, neighborhood street art exploration, and workshops focused on local crafts and modern design.</p>
+                      </div>
+                  </div>
+                </a>
                 </div>
-                
-            </div>
+        </li>
 
-            <div class="bottom-right-grid">
-                <div class="card card-x-small">
-                    <div class="card-image" style="background-image: url('placeholder-image-3.jpg');">
-                        
-                    </div>
-                    <div class="card-info">
-                        <h3>Fazenda Olavo Simões</h3>
-                    </div>
-                    
-                </div>
+        <li><a href="/Map/map.html">Map</a></li>
+        <!-- <li><a href="#">Company</a></li> -->
+    </ul>
 
-                <div class="card card-x-small">
-                    <div class="card-image" style="background-image: url('placeholder-image-4.jpg');">
-                        
-                    </div>
-                    <div class="card-info">
-                        <h3>Beautiful House</h3>
-                    </div>
-                    
+    <div class="Profile_Search">
+        <i class="bxr bx-search-big"></i>
+        <a href="/Account/account.html"><i class="bx bx-user"></i></a> 
+    </div>
+    <div class="nav-search-bar">
+        <input type="text" placeholder="Search...">
+        <i class="bx bx-x"></i>
+    </div>
+</header>
+
+    <div class="outdoor-hero">
+        <div class="overlay"></div>
+        <video autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765218780/Screen_Recording_2025-12-09_013243_wrymfj.mp4">
+        </video>
+        <div class="outdoor-hero-content">
+            <h1 style="font-family: 'Montserrat', sans-serif;">Explore the city</h1>
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <p style="font-family: 'Montserrat', sans-serif;
+                 font-weight: 500;
+                  margin-top: 8px;">
+                  Discover breathtaking landscapes and immerse yourself in nature with
+                  our curated city tours.
+                </p>
+                <div style="display:flex; gap: 2px;">
+                    <h3 style="color: white;">Explore</h3>
+                    <i class='bxr  bx-arrow-down-stroke' style="color: white; font-size: 1.8rem;"></i> 
                 </div>
             </div>
         </div>
     </div>
     
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 75px;
+    ">
+        <h1 style="color: white; font-family: 'Nunito Sans', sans-serif;">Discover water destinations</h1>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+            <p style="color: white; font-size: 20px;">Filter</p>
+            <i style="color: white; font-size: 18px;" class='bxr  bx-carets-up-down'></i> 
+        </div>
+    </div>
+    
+    <div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765774777/kyoto_city_dlx8ir.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Kyoto, Japan</p>
+            <h3>Experience timeless beauty in Kyoto</h3>
+            <p class="rating">4.8 (480)</p>
+            <p class="price-from">from $165</p>
+        </div>
+    </div>
 
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765775306/Paris_city_ibi5uj.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Paris, France</p>
+            <h3>Fall in love with Parisian charm</h3>
+            <p class="rating">4.9 (2,709)</p>
+            <p class="price-from">from $180</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765775687/Venice_city_vwv519.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Venice, Italy</p>
+            <h3>Float through the magic of Venice</h3>
+            <p class="rating">4.7 (1,920)</p>
+            <p class="price-from">from $175</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765776119/Prague_city_ognd5e.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Prague, Czech Republic</p>
+            <h3>Wander through fairytale Prague</h3>
+            <p class="rating">4.6 (1,870)</p>
+            <p class="price-from">from $150</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765781002/aerial-view-lucerne-switzerland-shutterstock_429368422_iwehmv.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Lucerne, Switzerland</p>
+            <h3>Breathe alpine elegance in Lucerne</h3>
+            <p class="rating">4.8 (890)</p>
+            <p class="price-from">from $200</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765776947/shutterstock_1107611312_hzhyop.png" alt=""></div>
+        <div class="card-details">
+            <p class="location">Barcelona, Spain</p>
+            <h3>Unleash your senses in Barcelona</h3>
+            <p class="rating">4.7 (2,300)</p>
+            <p class="price-from">from $170</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765777578/best-time-to-visit-istanbul-hero-cta_jqbvzu.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Istanbul, Turkey</p>
+            <h3>Cross continents in vibrant Istanbul</h3>
+            <p class="rating">4.6 (1,980)</p>
+            <p class="price-from">from $149</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765778315/875e0739ce279301b476fbe5c88fc608_fdlqy8.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Rio de Janeiro, Brazil</p>
+            <h3>Dance with nature in Rio</h3>
+            <p class="rating">4.6 (1,600)</p>
+            <p class="price-from">from $165</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765778686/sydney-opera-house-and-sydney-harbour-bridge-in-a-beautiful-summer-day-australia-beautiful-aerial-view-of-the-sydney-opera-house-by-the-bay-in-australia-pano_niwyfg.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Sydney, Australia</p>
+            <h3>Live the coastal dream in Sydney</h3>
+            <p class="rating">4.7 (2,100)</p>
+            <p class="price-from">from $190</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765779482/15985267-amsterdam-canal-in-the-autumn_jskmmc.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Amsterdam, Netherlands</p>
+            <h3>Cruise through canals in Amsterdam</h3>
+            <p class="rating">4.7 (2,250)</p>
+            <p class="price-from">from $175</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765780238/san-francisco1_ort9m9.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">San Francisco, USA</p>
+            <h3>Feel the breeze in San Francisco</h3>
+            <p class="rating">4.6 (1,780)</p>
+            <p class="price-from">from $185</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765780587/bf666d96-f929-47b9-9844-0f3563d3bad7_e7btpb.avif" alt=""></div>
+        <div class="card-details">
+            <p class="location">Dubrovnik, Croatia</p>
+            <h3>Walk the walls of Dubrovnik</h3>
+            <p class="rating">4.7 (1,120)</p>
+            <p class="price-from">from $155</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765796474/R_io1fyj.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Buenos Aires, Argentina</p>
+            <h3>Tango through Buenos Aires nights</h3>
+            <p class="rating">4.6 (1,340)</p>
+            <p class="price-from">from $175</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765796878/Stewart-Monument-Calton-Hill-Edinburgh-Scotland_keo3gq.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Edinburgh, Scotland</p>
+            <h3>Uncover legends in Edinburgh</h3>
+            <p class="rating">4.7 (1,670)</p>
+            <p class="price-from">from $160</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765797345/Cartagena-de-Indias_gtrwzw.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Cartagena, Colombia</p>
+            <h3>Color your journey in Cartagena</h3>
+            <p class="rating">4.6 (1,030)</p>
+            <p class="price-from">from $149</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765797605/E09ABA7F-D6D2-44EA-826E076B1F616512-2_g42vky.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Singapore, Singapore</p>
+            <h3>Explore futuristic beauty in Singapore</h3>
+            <p class="rating">4.8 (2,400)</p>
+            <p class="price-from">from $180</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765798049/R_1_jxrgak.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Bruges, Belgium</p>
+            <h3>Stroll through storybook Bruges</h3>
+            <p class="rating">4.7 (1,210)</p>
+            <p class="price-from">from $165</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765798347/h_x69tar.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Lisbon, Portugal</p>
+            <h3>Ride the hills of Lisbon</h3>
+            <p class="rating">4.6 (1,890)</p>
+            <p class="price-from">from $150</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765798579/d_vwogck.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Salzburg, Austria</p>
+            <h3>Sing with the hills in Salzburg</h3>
+            <p class="rating">4.7 (1,060)</p>
+            <p class="price-from">from $179</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765798791/t_wcsbkm.webp" alt=""></div>
+        <div class="card-details">
+            <p class="location">Marrakech, Morocco</p>
+            <h3>Awaken your senses in Marrakech</h3>
+            <p class="rating">4.6 (1,470)</p>
+            <p class="price-from">from $135</p>
+        </div>
+    </div>
+
+</div>
+<div class="tour-grid">
+    
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765800010/gu_xbz6ga.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Tallinn, Estonia</p>
+            <h3>Time travel in Tallinn’s old town</h3>
+            <p class="rating">4.7 (980)</p>
+            <p class="price-from">from $145</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765800559/op_p7xow5.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Queenstown, New Zealand</p>
+            <h3>Adventure begins in Queenstown</h3>
+            <p class="rating">4.8 (1,390)</p>
+            <p class="price-from">from $190</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765800938/ty_mol4yj.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Florence, Italy</p>
+            <h3>Walk through Renaissance Florence</h3>
+            <p class="rating">4.8 (2,120)</p>
+            <p class="price-from">from $179</p>
+        </div>
+    </div>
+
+    <div class="tour-card">
+        <div class="card-image-placeholder"><img style="width: 100%; height: 100%;" src="https://res.cloudinary.com/decdxqbep/image/upload/v1765801190/ft_owvdor.jpg" alt=""></div>
+        <div class="card-details">
+            <p class="location">Havana, Cuba</p>
+            <h3>Step back in time in Havana</h3>
+            <p class="rating">4.6 (890)</p>
+            <p class="price-from">from $135</p>
+        </div>
+    </div>
+
+</div>
+<div style="width: 100%; height: 30px; display: flex; justify-content: end; align-items: center; margin-top: 15px;">
+    <a href="" style="color: white; font-size: 18px;">View More</a>
+</div>
+
+<h1 style="color: white; margin-top: 75px; font-family: 'Nunito Sans', sans-serif;">Popular things to do in summer trip</h1>
+<div class="slider-container">
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="slider" id="animal-slider">
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960370/64cb3cea7873b194_best-snorkeling-in-the-world-buck-island-st_-croix-snorkel-1024x768_frx07t.jpg" alt="">
+                <div class="caption-letter" style="left: 7%;">Snoking</div>
+            </div>
+
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960369/Collection-Header-Desktop-all-rounder_1_egnn5e.webp" alt="">
+                <div class="caption-letter" style="left: 11%;">Paddleboarding</div>
+            </div>
+            
+            <div class="slide">
+                <div class="overlay"></div>
+                <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764960453/Girl_in_kayak_Whanganui_River_at_Blue_Duck_Station_-_Visit_Ruapehu_hpxwpq.jpg" alt="">
+                <div class="caption-letter" style="left: 13%;">Kayaking/Canoeing</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="hotelwrapper">
+        <h1 style="color: white; font-family: 'Nunito Sans',  sans-serif;">Hotel with view by destinations</h1>
+        <div class="hotel">
+            <div class="hotelpre">
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765121316/Screen_Recording_2025-12-07_222813_qhn0qx.mp4">
+                </video>
+            </div>
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Capella Ubud</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Bali - Indonesia</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Ubud, Bali's cultural and spiritual center, offers a blend of bustling streets with boutiques and cafes,
+                         surrounded by rice fields and jungle. The finest accommodations are found outside of town, such as the Capella Ubud.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,283 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hotel">
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Borgo Santandrea</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Amalfi Coast - Italy</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Overlooking the enchanting, centuries-old fishing village of Conca dei Marini, Borgo Santandrea is a serene haven situated in the heart of the Amalfi Coast.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,200 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+            <div class="hotelpre" >
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765127639/Screen_Recording_20251208_001058_YouTube_ubz8uh.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="hotel">
+            <div class="hotelpre">
+                <video
+                style=" height: 100%;"
+                autoplay loop muted>
+                    <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1765121316/Screen_Recording_2025-12-07_222813_qhn0qx.mp4">
+                </video>
+            </div>
+            <div class="hotelDes">
+                <h1 style="font-family: 'Nunito Sans', sans-serif;">Capella Ubud</h1>
+                <div style="display: flex; gap: 3px; margin-top: 5px;">
+                    <i class='bxr  bx-trip' style="opacity: 0.7;"></i> 
+                    <h3 style="opacity: 0.5; font-weight: 400;">Destination: Bali - Indonesia</h3>
+                </div>
+                <div class="hotelText">
+                    <p>
+                        Ubud, Bali's cultural and spiritual center, offers a blend of bustling streets with boutiques and cafes,
+                         surrounded by rice fields and jungle. The finest accommodations are found outside of town, such as the Capella Ubud.
+                    </p>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">What will you get</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-sea-view'></i>
+                        <h4 style="font-weight: 400;">Great view</h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-street-view'></i> 
+                        <h4 style="font-weight: 400;">High quality enviroment </h4> 
+                    </div>
+                    <div class="offerDes">
+                        <i class='bxr  bx-fork-knife'></i> 
+                        <h4 style="font-weight: 400;">Great meal offer</h4> 
+                    </div>
+                </div>
+                <div class="offer">
+                    <h3 style="font-weight: 400;">Price per night</h3>
+                    <div class="offerDes">
+                        <i class='bxr  bx-dollar-circle'></i> 
+                        <h4 style="font-weight: 400;">1,283 (USD)</h4> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="UserExp">
+        <div class="UserHeadLine">
+            <h1 style="font-size: 3.3rem; font-family: 'Nunito Sans';">Traveler's Experience
+            </h1>
+            <p style="font-size: 18px; font-family: 'Montserrat', sans-serif;">Hear from our adventurers who embraced the wild and 
+                returned with unforgettable stories.
+            </p>
+            <p style="font-size: 18px; margin-top: 15px;
+             font-family: 'Montserrat'; font-style: italic; color: rgb(17, 17, 119)">
+             Mr.Bora Red - "I found the Minnewanka trip to be a breathtaking adventure. 
+             I enjoyed the scenic cruise on the deep turquoise waters surrounded by the Rockies. 
+             Reaching Devil's Gap was the highlight. I was happy to spot wildlife like deer and bighorn sheep. 
+             It was a perfect blend of relaxation and wild exploration."
+            </p>
+            <div class="fullReview">
+                <div style="display: flex; align-items: center; gap: 3px;">
+                    <i class='bxr  bx-eye-alt' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See full review</a>
+                </div>
+                <div style="display: flex; gap: 3px;">
+                    <i class='bxr  bx-location-alt-2' style="font-size: 20px; margin-top: 2px;"></i>
+                    <a href="#" style="color: black; font-size: 18px;">See Destination</a>
+                </div>
+            </div>
+                
+            </div>
+        <div class="UserImg">
+            <img src="https://res.cloudinary.com/dicrvjstp/image/upload/v1764940509/Whitewater_rafting_in_Slovenia_on_the_emerald_Soca_River_tjouqh.jpg" alt="">
+        </div>
+    </div>
+    <div class="btText" style="margin-top: 165px;">
+        <h1>TosTrip: Your Journey Starts Here</h1>
+        <p>Explore the world with confidence. TosTrip is the definitive 
+          platform for travelers, fueled by a global community of millions. 
+          Get unbiased reviews, essential booking tools, and deep local insights
+           to unlock exclusive rewards and save on every trip ensuring your best adventure yet.
+        </p>
+      </div>
+
+        <footer class="footer">
+            <div class="overlay"></div>
+        <div class="footer-logo">
+            <a href="#">TosTrip</a>
+        </div>
+        <div class="footer-description">
+            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.</p>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-content">
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Descover</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Top Destinations</a></li>
+                    <li><a href="#" class="footer-link">Travel Guides</a></li>
+                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Company</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About us</a></li>
+                    <li><a href="#" class="footer-link">Careers <span style="color: #0fe50f;">(We're Hiring!)</span></a></li>
+                    <li><a href="#" class="footer-link">Our Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Help & Legal</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+                    <li><a href="#" class="footer-link">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-heading">Follow Us</h3>
+                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-facebook'></i> </i></a>
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-instagram-alt'></i>  </a>
+                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-twitter-x'></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="footer-divider footer-divider-bottom">
+
+        <div class="footer-copyright">
+            <p>© TosTrip 2025. All rights reserved.</p>
+            <div class="Cookie_Social">
+                <a class="footer-link" href="./Account/account.html">Sign Up</a>
+                <a class="footer-link" href="">Sitemap</a>
+                <a class="footer-link" href="">Cookies Settings</a>
+                <a class="footer-link" href="">Accessiblity</a>
+            </div>
+        </div>
+    </footer>
+            
+
+    <script src="/Account/ScrollBar.js"></script>
+    <script src="/Destinations/water/thingToDo.js"></script>
 </body>
 </html>
+
