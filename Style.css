@@ -1069,3 +1069,20 @@ body {
     gap: 15px;
   }
 }
+@media (max-width: 410px){
+  .btText{
+    margin-top: -1px;
+  }
+  .btText h1 {
+    font-size: 18px;
+  }
+  .btText p {
+    font-size: 14px;
+  }
+  .footer-logo a {
+    font-size: 2.7rem;
+  }
+  .footer-description{
+    font-size: 1rem;
+  }
+}

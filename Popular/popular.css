@@ -68,37 +68,39 @@
   font-size: 0.9em;
   color: #555;
 }
-.Offer{
-    color: white;
-    font-size: 0.8rem;
-    margin-top: 25px;
+.Offer {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 25px;
 }
-.Offer h1{
-    margin-bottom: 20px;
+.Offer h1 {
+  margin-bottom: 20px;
 }
-.Offer .Offer-banner{
-    background-color: white;
-    width: 100%;
-    height: 550px;
-    border-radius: 15px;
-    background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766117883/Offer_uhyeey.jpg') no-repeat center center;
-    background-size: cover;
+.Offer .Offer-banner {
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766117883/Offer_uhyeey.jpg")
+    no-repeat center center;
+  background-size: cover;
 }
-.Offer .Offer-banner:hover{
-    transition: all 0.3s ease-in-out;
-    opacity: 0.8;
+.Offer .Offer-banner:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 .Offer .Resort-banner {
-    background-color: white;
-    width: 100%;
-    height: 550px;
-    border-radius: 15px;
-    background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766126885/5830813_ntaban.jpg') no-repeat center center;
-    background-size: cover;
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766126885/5830813_ntaban.jpg")
+    no-repeat center center;
+  background-size: cover;
 }
-.Offer .Resort-banner:hover{
-    transition: all 0.3s ease-in-out;
-    opacity: 0.8;
+.Offer .Resort-banner:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
 }
 @media (max-width: 768px) {
   .popular-scroll-area {
@@ -114,9 +116,7 @@
   }
 
   .popular-item {
-    /* Ensures the items stay in a single row and take up a set percentage of the viewport */
     flex: 0 0 75%;
-    /* Add a small margin to the right to visually separate cards and show the next one */
     margin-right: 15px;
   }
 
@@ -137,18 +137,19 @@
   .popular-head {
     font-size: 0.6rem;
   }
-  .Offer .Offer-banner{
+  .Offer .Offer-banner {
     width: 100%;
     height: 250px;
-}
-
+  }
+  .Offer .Resort-banner {
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media (min-width: 769px) {
   .popular-scroll-area {
-    /* Allows items to wrap to a new line on larger screens */
     flex-wrap: wrap;
-    /* Removes the gap from the scroll area and moves it to the items for cleaner wrapping */
     gap: 0;
     justify-content: space-between;
   }
@@ -161,13 +162,26 @@
 }
 @media (max-width: 410px) {
   .popular-item {
-    /* Calculate width for 3 columns with space-between behavior */
     width: calc(33.33% - 14px);
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
   .popular-content p {
-  margin-bottom: 0;
-  font-size: 0.8em;
-  color: #555;
-}
+    margin-bottom: 0;
+    font-size: 0.7em;
+    color: #555;
+  }
+  .popular-item {
+    height: 400px;
+  }
+  .popular-item img {
+    height: 75%;
+  }
+  .popular-content h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 1em;
+  }
+  .seeMore {
+    display: none;
+  }
 }
