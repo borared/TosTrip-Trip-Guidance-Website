@@ -8,7 +8,7 @@ const extraCardsHTML = `
 
     <div class="right-column">
         <div class="iconic iconic-small">
-            <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764499363/1_h2L9CvEbV4UbXDnso6DE2g_v6ijoz.jpg');"></div>
+            <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766070036/2019-Top-Travel-Destinations-Sydney_mmeh3n.jpg');"></div>
             <div class="iconic-info">
                 <h3>Fazendas Boi Gordo</h3>
                 <p>Conceição do Araguaia (PA)</p>
@@ -18,7 +18,7 @@ const extraCardsHTML = `
 
         <div class="bottom-right-grid">
             <div class="iconic iconic-x-small">
-                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1764493060/Statue_of_liberty_ah6emo.webp');">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766085568/the-everygirl-best-places-for-first-international-trip-feature_cmed79.jpg');">
 
                 </div>
                 <div class="iconic-info">
@@ -28,7 +28,7 @@ const extraCardsHTML = `
             </div>
 
             <div class="iconic iconic-x-small">
-                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884275/AdobeStock_152886744-scaled_uxpp8l.jpg');">
+                <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765696029/image-32_pilvv2.png');">
 
                 </div>
                 <div class="iconic-info">
@@ -39,7 +39,7 @@ const extraCardsHTML = `
         </div>
     </div>
     <div class="iconic iconic-large">
-        <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884274/15-Iconic-Places-in-the-World_Eiffel-Tower-Paris-France_rh2010_Adobe-Stock-Photo_lgydnh.jpg');">
+        <div class="iconic-image" style="background-image: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1765884275/most-visited-tourist-attraction-world-hollywood-magical-kingdom_ewhjmh.png');">
 
         </div>
         <div class="iconic-info">

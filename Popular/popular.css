@@ -4,15 +4,17 @@
   box-sizing: border-box;
   width: calc(100% + 70px);
   margin-left: -40px;
+  
 }
 .popular-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 30px;
   margin-bottom: 25px;
+  
 }
 .seeMore {
   display: flex;
@@ -70,7 +72,7 @@
 }
 .Offer {
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 25px;
 }
 .Offer h1 {
