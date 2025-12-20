@@ -1,0 +1,510 @@
+.container-popular {
+  padding: 40px;
+  min-width: 100%;
+  box-sizing: border-box;
+  width: calc(100% + 70px);
+  margin-left: -40px;
+}
+.popular-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.seeMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.seeMore a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.seeMore:hover {
+  background-color: #414040;
+  transition: all 0.3s ease-in-out;
+}
+.popular-scroll-area {
+  display: flex;
+  gap: 5px;
+}
+
+.popular-item {
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+.popular-item:hover {
+  transform: translateY(-10px);
+}
+
+.popular-item img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  display: block;
+}
+
+.popular-content {
+  padding: 15px;
+}
+
+.popular-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.25em;
+}
+
+.popular-content p {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.Offer {
+  color: white;
+  font-size: 1rem;
+  margin-top: 25px;
+}
+.Offer h1 {
+  margin-bottom: 20px;
+}
+.Offer .Offer-banner {
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766117883/Offer_uhyeey.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+.Offer .Offer-banner:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.Offer .Resort-banner {
+  background-color: white;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766126885/5830813_ntaban.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+.Offer .Resort-banner:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+.popular-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  top: 12%;
+  left: 50%;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 20px;
+  margin-top: 70px;
+}
+.Hotel,
+.Food,
+.Airports {
+  flex: 0;
+}
+.popular-category .Hotel,
+.popular-category .Food,
+.popular-category .Airports {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  height: 40px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+#main-Angkor {
+  background: url("https://res.cloudinary.com/dkshzwacm/image/upload/v1766160580/13_flrzp7.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+.what-to-do-section {
+  margin: 0 auto;
+}
+
+.carousel-toDo-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.carousel-toDo {
+  display: flex;
+  gap: 15px;
+  padding: 0 5px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  cursor: grab;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-toDo::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-toDo:active {
+  cursor: grabbing;
+}
+
+.card-toDo {
+  flex: 0 0 auto;
+  width: 280px;
+  height: 350px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.intro-card {
+  background-color: #0772ed;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+}
+
+.intro-card h2 {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.intro-card p {
+  font-size: 16px;
+}
+
+.view-more-button {
+  background-color: white;
+  color: #0d1a29;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.card-image-container {
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-angkor-wat {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766084141/Ultimate-Guide-to-the-Best-Angkor-Wat-Temples-in-Cambodia_csg8wy.jpg");
+}
+.image-national-museum {
+  background-image: url("https://res.cloudinary.com/dkshzwacm/image/upload/v1766153714/6_vpmfwu.jpg");
+}
+.image-phare {
+  background-image: url("https://res.cloudinary.com/dkshzwacm/image/upload/v1766209467/18_mprqbq.jpg");
+}
+.image-banteay-srei {
+  background-image: url("https://res.cloudinary.com/dkshzwacm/image/upload/v1766216117/24_bg7uzt.jpg");
+}
+.image-artisans-angkor {
+  background-image: url("https://via.placeholder.com/280x240");
+}
+
+.card-details {
+  padding: 15px;
+  height: 40%;
+}
+
+.rating {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.score {
+  font-weight: bold;
+}
+.reviews-toDo {
+  font-size: 13px;
+  color: #6a6a6a;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.right-arrow {
+  right: 10px;
+}
+.right-arrow::before {
+  content: "❯";
+}
+.container-userReview {
+  margin: 0 auto;
+  margin-top: 85px;
+}
+
+.container-userReview header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.container-userReview h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.write-review-button {
+  background-color: #0772ed;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.write-review-button:hover {
+  background-color: #365899;
+}
+
+.write-review-button svg {
+  margin-right: 8px;
+  fill: white;
+}
+
+.reviews-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.review-user-card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-user {
+  color: #4267b2;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.place-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: #172b4d;
+  margin: 0;
+}
+
+.reviewer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewer-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  background-color: #ced4da;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 14px;
+}
+
+.review-text {
+  font-size: 14px;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.avatar {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1762362630/Gemini_Generated_Image_snm9qlsnm9qlsnm9_xlxzzm.png");
+  background-size: cover;
+}
+.avatar1 {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1762362374/Screenshot_2025-11-04_120533_q4frat.png");
+  background-size: cover;
+}
+.avatar2 {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/005/346/410/small/close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-on-isolated-light-gray-studio-background-photo.jpg");
+  background-size: cover;
+}
+.Location {
+  width: 100%;
+  height: 570px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1244px) {
+  .popular-item {
+    height: 360px;
+  }
+  .popular-content h3 {
+    font-size: 1em;
+  }
+
+  .popular-content p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 768px) {
+  .popular-scroll-area {
+    overflow-x: auto;
+    padding-bottom: 20px;
+    /* Hides the scrollbar on some browsers but keeps functionality */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .popular-scroll-area::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popular-item {
+    flex: 0 0 75%;
+    margin-right: 15px;
+  }
+
+  .popular-item:last-child {
+    margin-right: 0;
+  }
+  .Offer {
+    font-size: 0.6rem;
+  }
+  .seeMore a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  .seeMore {
+    width: 140px;
+  }
+  .popular-head {
+    font-size: 0.6rem;
+  }
+  .Offer .Offer-banner {
+    width: 100%;
+    height: 250px;
+  }
+  .Offer .Resort-banner {
+    width: 100%;
+    height: 250px;
+  }
+  .popular-item {
+    height: 300px;
+  }
+  .container-userReview h1 {
+    font-size: 1.2rem;
+  }
+  #write{
+    display: none;
+  }
+  #Theme{
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .popular-scroll-area {
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .popular-item {
+    /* Calculate width for 3 columns with space-between behavior */
+    width: calc(33.33% - 14px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 410px) {
+  .popular-item {
+    width: calc(33.33% - 14px);
+    margin-bottom: 5px;
+  }
+  .popular-content p {
+    margin-bottom: 0;
+    font-size: 0.7em;
+    color: #555;
+  }
+  .popular-item {
+    height: 400px;
+  }
+  .popular-item img {
+    height: 75%;
+  }
+  .popular-content h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 1em;
+  }
+  .seeMore {
+    display: none;
+  }
+}

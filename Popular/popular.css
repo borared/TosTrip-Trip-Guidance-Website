@@ -46,6 +46,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 300px;
   height: 600px;
+  transition: all 0.3s ease-in-out;
+}
+.popular-item:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .popular-item img {
