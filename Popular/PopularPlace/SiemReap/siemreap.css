@@ -124,6 +124,13 @@
 .Food,
 .Airports {
   flex: 0;
+  transition: all 0.3s ease-in-out;
+}
+.Hotel:hover,
+.Food:hover,
+.Airports:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 .popular-category .Hotel,
 .popular-category .Food,
@@ -180,6 +187,11 @@
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+.card-toDo:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
 }
 
 .intro-card {
@@ -190,6 +202,9 @@
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
+}
+.intro-card:hover {
+  transform: none;
 }
 
 .intro-card h2 {
@@ -231,7 +246,37 @@
   background-image: url("https://res.cloudinary.com/dkshzwacm/image/upload/v1766216117/24_bg7uzt.jpg");
 }
 .image-artisans-angkor {
-  background-image: url("https://via.placeholder.com/280x240");
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221622/DSC07848.width-960_ww2xoc.jpg");
+}
+.image-cuisine {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221621/100r0z000000ne3hb0178_C_300_225_R5.jpg__toiwjz.webp");
+}
+.image-chanrey {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221621/0106412000p7i0t7tFC9E_C_300_225_R5.jpg__q3amge.webp");
+}
+.image-kitchen {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221621/100f0j000000ahlqsA476_C_300_225_R5.jpg__wf7ann.webp");
+}
+.image-amok {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221622/100u0j000000ahlth5C8F_C_300_225_R5.jpg__qngsk3.webp");
+}
+.image-factory {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766221622/100j0j000000ail8zC447_C_300_225_R5.jpg__yfplwx.webp");
+}
+.image-vellita {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766222221/1d8dd4cf_yjd0o3.avif");
+}
+.image-khmerMansion {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766222220/167196887_h0ptmb.jpg");
+}
+.image-embassy {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766222426/2025_04_22_Embassy_Angkor_Resort_Spa_Day_4_14688_14748_Master_bdv_photography-scaled_pmewlz.webp");
+}
+.image-sokha {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766222220/539799464_jlwbxl.jpg");
+}
+.image-hillocks {
+  background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766222221/b9d43870e6c9781fea1c9f9405a43e18_ht1lix.jpg");
 }
 
 .card-details {
@@ -240,15 +285,18 @@
 }
 
 .rating {
+  margin-top: 8px;
   font-size: 14px;
   margin-bottom: 10px;
+  background-color: #0772ed;
+  color: white;
 }
 .score {
   font-weight: bold;
 }
 .reviews-toDo {
   font-size: 13px;
-  color: #6a6a6a;
+  color: white;
 }
 
 .nav-arrow {
@@ -288,7 +336,7 @@
   font-weight: 700;
   color: white;
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .write-review-button {
@@ -462,11 +510,32 @@
   .container-userReview h1 {
     font-size: 1.2rem;
   }
-  #write{
+  #write {
     display: none;
   }
-  #Theme{
+  #Theme {
     font-size: 1.2rem;
+  }
+  .popular-category {
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .popular-category::-webkit-scrollbar {
+    display: none;
+  }
+
+  .popular-category > div {
+    flex: 0 0 auto;
+  }
+  .Hotel:hover,
+  .Food:hover,
+  .Airports:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
   }
 }
 
