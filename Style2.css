@@ -942,6 +942,20 @@
     align-items: flex-start;
   }
 }
-@media (max-width: 384px) {
+@media (max-width: 450px) {
+  .CategorySearch {
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  .content-wrapper {
+    overflow-x: hidden;
+    margin-bottom: -30px;
+    margin-top: 50px;
+  }
+  .destinations-grid a {
+    font-size: 14px;
+  }
   
 }

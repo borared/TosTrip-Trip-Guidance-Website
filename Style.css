@@ -401,7 +401,7 @@ body {
 }
 .searchWrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 120px;
 }
 .search {
@@ -1068,13 +1068,14 @@ body {
     flex-direction: column-reverse;
     gap: 15px;
   }
-  .btText{
-    margin-top: -1px;
+  .btText {
+    margin-top: 30px;
   }
 }
-@media (max-width: 410px){
-  .btText{
-    margin-top: -1px;
+@media (max-width: 450px) {
+ 
+  .btText {
+    margin-top: 30px;
   }
   .btText h1 {
     font-size: 18px;
@@ -1085,7 +1086,21 @@ body {
   .footer-logo a {
     font-size: 2.7rem;
   }
-  .footer-description{
+  .footer-description {
     font-size: 1rem;
+  }
+  .searchInput input {
+    width: 350px;
+    height: 40px;
+  }
+  .searchBtn {
+    width: 67px;
+    height: 30px;
+    font-size: 15px;
+    top: 55%;
+    background-color: #6366f1;
+  }
+  #BottomLine{
+    display: none;
   }
 }
