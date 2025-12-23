@@ -32,7 +32,7 @@ body {
 .social a {
   position: relative;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 .navbar a::after,
@@ -43,7 +43,7 @@ body {
   left: 0;
   width: 0;
   height: 1px;
-  background-color: white;
+  background-color: black;
   transition: width 0.4s ease, background 0.3s ease;
 }
 .navbar a:hover::after,
@@ -81,9 +81,14 @@ body {
 
 /* SCROLLED STATE: Black text & underline */
 .navbar.scrolled a,
-.navbar.scrolled i,
 .navbar.scrolled .logo a {
   color: black !important;
+}
+.navbar.scrolled .sidebar a {
+  color: rgb(255, 255, 255) !important;
+}
+.navbar.scrolled .navigation i {
+  color: rgb(0, 0, 0) !important;
 }
 .navbar.scrolled a::after {
   background: black;
@@ -112,7 +117,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: white; /* Default color for text not in <a> tags */
+  color: black; /* Default color for text not in <a> tags */
   flex: 1;
   list-style: none; /* Add this if 'navigation' is a <ul> */
   padding: 0;
@@ -121,6 +126,7 @@ body {
 
 .navigation li {
   position: relative; /* Essential for dropdown positioning */
+  color: white;
 }
 
 .Profile_Search {
@@ -128,17 +134,17 @@ body {
   justify-content: flex-end;
   font-size: 25px;
   gap: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
   flex: 1;
 }
 .Profile_Search i:hover {
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 254, 254, 0.7);
 }
 
 /* SCROLLED STATE: Profile/Search icons color change */
 .navbar.scrolled .Profile_Search i {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .navbar.scrolled .Profile_Search i:hover {
   color: rgba(0, 0, 0, 0.7);
@@ -153,7 +159,7 @@ body {
   right: 60px;
   top: 46%;
   transform: translateY(-50%);
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 50px;
   height: 38px;
   width: 320px;
@@ -175,10 +181,10 @@ body {
   background: transparent;
 }
 .navbar.scrolled .nav-search-bar {
-  background: black;
+  background: rgb(255, 255, 255);
 }
 .navbar.scrolled .nav-search-bar input {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .navbar.scrolled .nav-search-bar .bxr.bx-search-big,
 .navbar.scrolled .nav-search-bar i {
@@ -188,14 +194,23 @@ body {
   color: black !important;
 }
 .navbar.scrolled .bxr.bx-search-big.is-active {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 .bxr.bx-search-big {
   color: rgb(255, 255, 255);
   transition: color 0.3s ease;
 }
 .navbar:not(.scrolled) .bxr.bx-search-big.is-active {
-  color: black;
+  color: rgb(255, 255, 255);
+}
+.navbar.scrolled .checkmark span {
+  background-color: black !important;
+}
+.bx .bx-user {
+  background-color: white;
+}
+.navbar.scrolled .bx-user {
+  color: black !important;
 }
 
 /* ==================================================
@@ -288,57 +303,124 @@ body {
 .navbar.scrolled .dropdown-menu a::after {
   background: transparent !important; /* Remove underline for links inside the dropdown */
 }
-.burger {
-  position: relative;
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-  display: none;
-  transition: all 0.3s ease-in-out;
-}
 .burger input {
-  display: none;
-}
-.burger span {
-  display: block;
   position: absolute;
-  height: 2px;
-  width: 100%;
-  background: white;
-  border-radius: 9px;
-  left: 0;
-  transition: 0.25s ease-in-out;
-}
-.burger span:nth-of-type(1) {
-  top: 3px;
-  transform-origin: left center;
-}
-.burger span:nth-of-type(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: left center;
-}
-.burger span:nth-of-type(3) {
-  bottom: 3px;
-  transform-origin: left center;
-}
-.burger input:checked ~ span:nth-of-type(1) {
-  transform: rotate(45deg);
-  top: -2px;
-  left: 5px;
-}
-.burger input:checked ~ span:nth-of-type(2) {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
   width: 0;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+}
+
+.checkmark span {
+  width: 32px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.checkmark span:nth-child(1) {
+  top: 10%;
+}
+
+.checkmark span:nth-child(2) {
+  top: 50%;
+}
+
+.checkmark span:nth-child(3) {
+  top: 90%;
+}
+
+.burger input:checked + .checkmark span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  -webkit-transform: translateY(-50%) rotate(45deg);
+  -moz-transform: translateY(-50%) rotate(45deg);
+  -ms-transform: translateY(-50%) rotate(45deg);
+  -o-transform: translateY(-50%) rotate(45deg);
+}
+
+.burger input:checked + .checkmark span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  -moz-transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  -o-transform: translateY(-50%) rotate(-45deg);
+}
+
+.burger input:checked + .checkmark span:nth-child(3) {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+  -moz-transform: translateX(-50px);
+  -ms-transform: translateX(-50px);
+  -o-transform: translateX(-50px);
   opacity: 0;
 }
-.burger input:checked ~ span:nth-of-type(3) {
-  transform: rotate(-45deg);
-  top: 25px; /* Needs adjustment, was 100% - 2px height */
-  left: 5px;
+/* --- Sidebar Styles --- */
+.sidebar {
+  display: block;
+  position: fixed; /* Fixes it relative to the viewport */
+  top: 0;
+  right: 0; /* Starts off-screen on the right */
+  width: 250px; /* Adjust as needed */
+  height: 100%;
+  background-color: #333; /* Dark background */
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  /* The key for the slide-in/out effect */
+  transform: translateX(100%); /* Moves it entirely off-screen to the right */
+  transition: transform 0.3s ease-in-out;
+  z-index: 10; /* Make sure it appears above other content */
 }
-.burger:hover {
-  opacity: 0.7;
+
+/* Sidebar Navigation Styling (Optional but recommended) */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
 }
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #555;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+/* --- Activation Logic --- */
+
+/* Selects the sidebar when the sibling checkbox is checked */
+.burger input:checked ~ .sidebar {
+  transform: translateX(0); /* Moves it to its default (on-screen) position */
+}
+
 .Main_Content {
   top: 0;
   left: 0;
@@ -931,6 +1013,9 @@ body {
   .navigation {
     display: none;
   }
+  .burger {
+    display: block;
+  }
   .Main_Content .bottom_head {
     font-size: 16px;
     padding: 0 30px;
@@ -1073,7 +1158,6 @@ body {
   }
 }
 @media (max-width: 450px) {
- 
   .btText {
     margin-top: 30px;
   }
@@ -1100,7 +1184,7 @@ body {
     top: 55%;
     background-color: #6366f1;
   }
-  #BottomLine{
+  #BottomLine {
     display: none;
   }
 }

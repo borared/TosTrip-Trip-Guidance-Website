@@ -1,11 +1,11 @@
 const searchPages = [
     {
       keywords: ["siem reap", "angkor"],
-      url: "http://127.0.0.1:5502/Popular/PopularPlace/SiemReap/siemreap.html"
+      url: "https://tos-trip-trip-guidance-website.vercel.app/Popular/PopularPlace/SiemReap/siemreap.html"
     },
     {
       keywords: ["capella ubud", "hotel bali"],
-      url: "http://127.0.0.1:5502/Destinations/water/Hotel/CapellaUbud/capella.html"
+      url: "https://tos-trip-trip-guidance-website.vercel.app/Destinations/water/Hotel/CapellaUbud/capella.html"
     },
     {
       keywords: ["battambang"],
