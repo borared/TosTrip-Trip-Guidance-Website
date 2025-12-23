@@ -97,8 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #059d17; /* Bright green color */
-    color: white;
+    background-color: white; /* Bright green color */
     font-size: 18px;
     font-weight: 400;
     padding: 12px 25px;
@@ -549,78 +548,81 @@ body {
 /* ------------------------------------------- */
 
 @media (max-width: 768px) {
-    .photo-video-grid {
-        /* On smaller screens, stack the items vertically */
-        grid-template-columns: 1fr; /* Single column */
-        gap: 10px; /* Increase gap for clarity when stacking */
-        margin: 10px;
-    }
+  .photo-video-grid {
+    /* On smaller screens, stack the items vertically */
+    grid-template-columns: 1fr; /* Single column */
+    gap: 10px; /* Increase gap for clarity when stacking */
+    margin: 10px;
+  }
 
-    .main-image-container {
-        /* Adjust height for mobile view, making it taller than the sidebar total */
-        min-height: 250px;
-    }
+  .main-image-container {
+    /* Adjust height for mobile view, making it taller than the sidebar total */
+    min-height: 250px;
+  }
 
-    .sidebar-thumbnails {
-        /* When stacked, the sidebar items should just fill their content width, not a fixed height */
-        grid-template-rows: repeat(3, 150px); /* Give each thumbnail a fixed height for mobile */
-        min-height: auto;
-    }
+  .sidebar-thumbnails {
+    /* When stacked, the sidebar items should just fill their content width, not a fixed height */
+    grid-template-rows: repeat(
+      3,
+      150px
+    ); /* Give each thumbnail a fixed height for mobile */
+    min-height: auto;
+  }
 
-    /* Optional: Ensure thumbnail overlays look good on smaller screens */
-    .thumbnail-overlay {
-        padding: 8px 12px;
-    }
+  /* Optional: Ensure thumbnail overlays look good on smaller screens */
+  .thumbnail-overlay {
+    padding: 8px 12px;
+  }
 
-    .reviews-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .reviews-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .review-actions {
-        margin-top: 15px;
-        flex-wrap: wrap;
-    }
-    
-    .review-content {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        border-top: 1px solid #eee;
-        padding-top: 20px;
-    }
+  .review-actions {
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
 
-    .overall-rating {
-        border-right: none;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 15px;
-        width: 100%;
-        text-align: left;
-    }
+  .review-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
 
-    .overall-rating .score {
-        display: inline-block;
-        margin-right: 15px;
-    }
-    
-    .overall-rating .descriptor,
-    .overall-rating .stars,
-    .overall-rating .count {
-        display: inline-block;
-        margin-top: 0;
-    }
-    
-    .breakdown-bars {
-        max-width: 100%;
-        width: 100%;
-        margin-right: 0;
-    }
+  .overall-rating {
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    width: 100%;
+    text-align: left;
+  }
 
-    .category-ratings {
-        grid-template-columns: 1fr;
-        width: 100%;
-    }
-    .details-section {
+  .overall-rating .score {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  .overall-rating .descriptor,
+  .overall-rating .stars,
+  .overall-rating .count {
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .breakdown-bars {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .category-ratings {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .details-section {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -630,4 +632,36 @@ body {
   .check-availability-button {
     font-size: 14px;
   }
+  .header-section {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+}
+@media (max-width: 480px){
+  .contact-links {
+  display: flex;
+  gap: 10px;
+}
+  .contact-link {
+  font-size: 12px;
+}
+  .contact-link a{
+    white-space: nowrap;
+  }
+  .rating-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
+}
+.inclusions {
+  display: none;
+}
+
+.actions {
+  display: none;
+}
 }

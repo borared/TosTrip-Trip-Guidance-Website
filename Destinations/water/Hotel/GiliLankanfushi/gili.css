@@ -626,4 +626,36 @@ body {
   .check-availability-button {
     font-size: 14px;
   }
+  .header-section {
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+}
+@media (max-width: 480px){
+  .contact-links {
+  display: flex;
+  gap: 10px;
+}
+  .contact-link {
+  font-size: 12px;
+}
+  .contact-link a{
+    white-space: nowrap;
+  }
+  .rating-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  font-size: 16px;
+  color: white;
+}
+.inclusions {
+  display: none;
+}
+
+.actions {
+  display: none;
+}
 }

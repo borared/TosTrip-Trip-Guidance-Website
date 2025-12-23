@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -33,11 +32,10 @@ body {
 }
 .overlay {
   position: absolute;
-  bottom: 0; /* Positioned correctly at the bottom */
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 40%; /* Set to cover the bottom 40% of the placeholder */
-  /* Corrected gradient for a smooth fade from transparent to dark */
+  height: 40%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   z-index: 1;
 }
@@ -55,7 +53,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .tour-card:hover {
@@ -110,6 +108,7 @@ body {
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+  border-radius: 15px;
 }
 
 /* The Reel that moves */
@@ -140,7 +139,7 @@ body {
 
 /* The Letter/Caption Styling */
 .caption-letter {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   position: absolute;
   top: 90%;
   transform: translate(-50%, -50%);
@@ -181,6 +180,7 @@ body {
   overflow: hidden;
   position: relative;
   margin-top: 25px;
+  border-radius: 15px;
 }
 .hotelpre {
   flex: 2;
@@ -218,19 +218,20 @@ body {
   color: white;
   font-size: 18px;
   font-family: "Nunito Sans", sans-serif;
+  border-radius: 13px;
 }
 .DetailBtn button:hover {
   cursor: pointer;
 }
-
-.UserExp{
+.UserExp {
+  display: flex;
   width: 100%;
   height: 500px;
   background-color: white;
   margin-top: 1300px;
-  display: flex;
+  border-radius: 15px;
 }
-.UserHeadLine{
+.UserHeadLine {
   display: flex;
   flex-direction: column;
   flex: 2;
@@ -238,15 +239,15 @@ body {
   align-items: start;
   padding-left: 50px;
   padding-right: 25px;
-
 }
-.UserImg{
+.UserImg {
   display: flex;
   flex: 1;
   height: 650px;
   justify-content: center;
   align-items: center;
   background-color: #d1d1d1;
+  border-radius: 15px;
   margin: 20px;
   font-size: 20px;
   color: #555;
@@ -257,14 +258,13 @@ body {
   margin-top: -80px;
   margin-right: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-
 }
-UerImg img{
+UerImg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.fullReview{
+.fullReview {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -275,9 +275,6 @@ UerImg img{
   transform: translateY(35px);
   padding-right: 30px;
 }
-
-
-
 
 /* Keyframe Definition */
 @keyframes loadProgress {
@@ -294,16 +291,17 @@ UerImg img{
   animation: loadProgress 8s linear forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1050px) {
   .tour-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .UserHeadLine h1 {
+    text-align: center;
+    font-size: 1.8rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .tour-grid {
-    grid-template-columns: 1fr;
-  }
   .outdoor-hero-content h1 {
     font-size: 16px;
   }
@@ -331,6 +329,7 @@ UerImg img{
     flex: none;
     width: 100%;
     height: 300px;
+    border-radius: 10px;
   }
   .hotelDes {
     flex: none;
@@ -364,7 +363,6 @@ UerImg img{
   .UserExp {
     flex-direction: column;
     height: auto;
-    margin-top: 1900px;
     padding: 0 15px;
     padding-top: 20px;
   }
@@ -382,7 +380,7 @@ UerImg img{
 
   .UserHeadLine h1 {
     text-align: center;
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
 
   .UserHeadLine p:nth-child(2) {
@@ -413,6 +411,7 @@ UerImg img{
     margin: 30px auto 20px auto;
     overflow: hidden;
     box-shadow: none;
+    border-radius: 10px;
   }
 
   .UserImg img {
@@ -421,14 +420,61 @@ UerImg img{
     object-fit: cover;
   }
   .caption-letter {
-  font-family: "Nunito", sans-serif;
-  position: absolute;
-  top: 90%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 1.2em;
-  font-weight: bold;
-  z-index: 10;
-  margin-left: 60px;
+    font-family: "Nunito", sans-serif;
+    position: absolute;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 10;
+    margin-left: 60px;
+  }
+  .Detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .DetailBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .UserExp {
+    margin-top: 2090px;
+  }
+  .outdoor-hero-content {
+    margin-top: -50px;
+  }
 }
+@media (max-width: 480px) {
+  .tour-grid {
+    grid-template-columns: 1fr;
+  }
+  #userWord{
+    display: none;
+  }
+  .fullReview{
+    display: none;
+   
+  }
+  .UserExp {
+    margin-top: 2130px;
+  }
+  .headCategoryOutdoor h1{
+    font-size: 18px;
+  }
+  .outdoor-hero-content h3{
+    font-size: 17px;
+  }
+  
+  .outdoor-hero-content {
+    margin-top: -50px;
+    padding-right: 15px;
+    padding-left: 20px;
+  }
+  .outdoor-hero-content p{
+    font-size: 13px;
+  }
+
 }
