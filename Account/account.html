@@ -8,6 +8,7 @@
     <title>TosTrip: Trip Guidance</title>
     <link rel="stylesheet" href="AccStyle.css">
     <link rel="stylesheet" href="/Style.css">
+
     <link href="https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -83,6 +84,23 @@
     <div class="Profile_Search">
         <i class="bxr bx-search-big"></i>
         <a href="/Account/account.html"><i class="bx bx-user"></i></a> 
+        <label class="burger">
+    <input type="checkbox">
+    <div class="checkmark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/Popular/popular.html">Popular</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="/Map/map.html">Map</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </label>
     </div>
     <div class="nav-search-bar">
         <input type="text" placeholder="Search...">
@@ -90,11 +108,6 @@
     </div>
 </header>
     <div class="main-container">
-        <video autoplay muted loop class="background-video"
-            style="width: 100%; height: 100%; object-fit: cover; z-index: 1; position: absolute;">
-            <source src="https://res.cloudinary.com/dicrvjstp/video/upload/v1764056404/Rec_oupguc.mp4">
-        </video>
-        <div class="image-overlay"></div>
         <div class="content-wrapper">
             <!-- Right Panel -->
             <div class="right-panel" style="position: relative; z-index: 20;">
@@ -174,8 +187,10 @@
                 </form>
             </div>
             <!-- Left Panel -->
-            <dotlottie-wc src="https://lottie.host/b48e57e6-8346-4414-9dcb-a3d7535dfa53/uFBv3bpjq0.lottie"
-                style="width: 700px; height: 450px ; position: relative; z-index: 20;" autoplay loop></dotlottie-wc>
+            <div class="left-panel">
+                <dotlottie-wc src="https://lottie.host/b48e57e6-8346-4414-9dcb-a3d7535dfa53/uFBv3bpjq0.lottie" class="lottie"
+                    style="width: 600px; height: 450px ; position: relative; z-index: 20;" autoplay loop></dotlottie-wc>
+            </div>
 
 
 
@@ -189,69 +204,70 @@
         Get unbiased reviews, essential booking tools, and deep local insights
         to unlock exclusive rewards and save on every trip ensuring your best adventure yet.</p>
     </div>
-    <footer class="footer" style="margin-top: 70px; position: relative; z-index: 100;">
-        <div class="overlay"></div>
-        <div class="footer-logo">
-            <a href="/index.html">TosTrip</a>
-            <i class='bxr  bx-plane-alt' style="font-size: 3.5rem;"></i>
-        </div>
-        <div class="footer-description">
-            <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.
-            </p>
-        </div>
+    <footer class="footer"
+    style="box-sizing: border-box;
+    width: calc(100% + 70px);">
+      <div class="overlay"></div>
+      <div class="footer-logo">
+        <a href="#" style="font-family: 'Nunito Sans', sans-serif; font-weight: 600;">TosTrip</a>
+        <i class='bxr  bx-plane-alt' style="font-size: 3.5rem;"></i>
+      </div>
+      <div class="footer-description">
+        <p>Your trusted guide to planning the perfect journey. Explore the world with confidence and local insights.</p>
+      </div>
 
-        <hr class="footer-divider">
+      <hr class="footer-divider">
 
-        <div class="footer-content">
+      <div class="footer-content">
 
-            <div class="footer-section">
-                <h3 class="footer-heading">Descover</h3>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">Top Destinations</a></li>
-                    <li><a href="#" class="footer-link">Travel Guides</a></li>
-                    <li><a href="#" class="footer-link">Adventure Tours</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-heading">Company</h3>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">About us</a></li>
-                    <li><a href="#" class="footer-link">Careers <span style="color: #0fe50f;">(We're Hiring!)</span></a>
-                    </li>
-                    <li><a href="#" class="footer-link">Our Blog</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-heading">Help & Legal</h3>
-                <ul class="footer-links">
-                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                    <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
-                    <li><a href="#" class="footer-link">Terms of Service</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3 class="footer-heading">Connect</h3>
-                <div style="display: flex; gap: 5px; font-size: 1.7rem;">
-                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-facebook'></i> </i></a>
-                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-instagram-alt'></i> </a>
-                    <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-twitter-x'></i> </a>
-                </div>
-            </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Descover</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Top Destinations</a></li>
+            <li><a href="#" class="footer-link">Travel Guides</a></li>
+            <li><a href="#" class="footer-link">Adventure Tours</a></li>
+          </ul>
         </div>
 
-        <hr class="footer-divider footer-divider-bottom">
-
-        <div class="footer-copyright">
-            <p>© TosTrip 2025. All rights reserved.</p>
-            <div class="Cookie_Social">
-                <a class="footer-link" href="">Sitemap</a>
-                <a class="footer-link" href="">Cookies Settings</a>
-                <a class="footer-link" href="">Accessiblity</a>
-            </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Company</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">About us</a></li>
+            <li><a href="#" class="footer-link">Careers <span style="color: #0fe50f;">(We're Hiring!)</span></a></li>
+            <li><a href="#" class="footer-link">Our Blog</a></li>
+          </ul>
         </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">Help & Legal</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">FAQ / Help Center</a></li>
+            <li><a href="#" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-heading">Follow Us</h3>
+          <div style="display: flex; gap: 5px; font-size: 1.7rem;">
+            <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-facebook'></i> </i></a>
+            <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-instagram-alt'></i> </a>
+            <a href="" style=" color:rgb(255, 255, 255);"><i class='bxl  bx-twitter-x'></i> </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider footer-divider-bottom">
+
+      <div class="footer-copyright">
+        <p>© TosTrip 2025. All rights reserved.</p>
+        <div class="Cookie_Social">
+          <a class="footer-link" href="./Account/account.html">Sign Up</a>
+          <a class="footer-link" href="/Map/map.html">Sitemap</a>
+          <a class="footer-link" href="">Cookies Settings</a>
+          <a class="footer-link" href="">Accessiblity</a>
+        </div>
+      </div>
     </footer>
     <script src="ScrollBar.js"></script>
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>

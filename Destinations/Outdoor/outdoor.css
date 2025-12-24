@@ -228,8 +228,8 @@ body {
   width: 100%;
   height: 500px;
   background-color: white;
-  margin-top: 1300px;
   border-radius: 15px;
+  margin-top: 1300px;
 }
 .UserHeadLine {
   display: flex;
@@ -317,6 +317,9 @@ UerImg img {
   }
   .headCategoryOutdoor h1 {
     font-size: 22px;
+  }
+  h1{
+    font-size: 23px;
   }
   .hotel {
     flex-direction: column;
@@ -440,9 +443,6 @@ UerImg img {
     justify-content: center;
     align-items: center;
   }
-  .UserExp {
-    margin-top: 2090px;
-  }
   .outdoor-hero-content {
     margin-top: -50px;
   }
@@ -459,7 +459,7 @@ UerImg img {
    
   }
   .UserExp {
-    margin-top: 2130px;
+    margin-top: 2000px;
   }
   .headCategoryOutdoor h1{
     font-size: 18px;
