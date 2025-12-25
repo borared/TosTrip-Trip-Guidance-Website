@@ -1,6 +1,6 @@
 const searchPages = [
     {
-      keywords: ["siem reap", "angkor"],
+      keywords: ["siem reap", "angkor", "Siem reap", "Siem Reap"],
       url: "https://tos-trip-trip-guidance-website.vercel.app/Popular/PopularPlace/SiemReap/siemreap.html"
     },
     {

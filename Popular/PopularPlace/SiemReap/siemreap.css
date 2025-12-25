@@ -98,7 +98,7 @@
   width: 100%;
   height: 550px;
   border-radius: 15px;
-  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766126885/5830813_ntaban.jpg")
+  background: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1766630692/bb4db8533eaf94e4ab5405248822d306_vokq3s.webp")
     no-repeat center center;
   background-size: cover;
 }
@@ -503,6 +503,10 @@
   .Offer .Resort-banner {
     width: 100%;
     height: 250px;
+  }
+  .Resort-banner{
+    background: url('https://res.cloudinary.com/dicrvjstp/image/upload/v1766630692/bb4db8533eaf94e4ab5405248822d306_vokq3s.webp') no-repeat center center;
+    background-size: cover;
   }
   .popular-item {
     height: 300px;
