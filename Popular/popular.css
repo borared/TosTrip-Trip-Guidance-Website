@@ -113,7 +113,6 @@
   .popular-scroll-area {
     overflow-x: auto;
     padding-bottom: 20px;
-    /* Hides the scrollbar on some browsers but keeps functionality */
     -ms-overflow-style: none;
     scrollbar-width: none;
   }

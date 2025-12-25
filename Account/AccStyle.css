@@ -1,4 +1,3 @@
-/* CSS Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +11,6 @@ body {
   color: #fff;
 }
 
-
-
-/* Main Container */
 .main-container {
   min-height: 100vh;
   width: 100%;
@@ -37,7 +33,6 @@ body {
   overflow: hidden;
 }
 
-/* Left Panel with Image */
 .left-panel {
   flex: 1;
   display: flex;
@@ -70,12 +65,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10; /* bring above video */ 
+  z-index: 10;
   margin-top: 70px;
 }
 
-
-/* Right Panel with Form */
 .right-panel {
   flex: 1;
   display: flex;
@@ -101,7 +94,6 @@ body {
   color: rgb(0, 0, 0);
 }
 
-/* Form Elements */
 .form-group {
   margin-bottom: 16px;
 }
@@ -139,7 +131,6 @@ input:focus {
   box-shadow: 0 0 0 1px #3b82f6;
 }
 
-/* Submit Button */
 .submit-btn {
   width: 100%;
   background-color: #3b82f6;
@@ -156,7 +147,6 @@ input:focus {
   background-color: #2563eb;
 }
 
-/* Divider */
 .divider-container {
   margin-top: 24px;
 }
@@ -180,7 +170,6 @@ input:focus {
   font-size: 0.875rem;
 }
 
-/* Social Buttons */
 .social-buttons {
   display: flex;
   gap: 16px;
@@ -233,7 +222,6 @@ input:focus {
   background-color: #64748b;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .content-wrapper {
     flex-direction: column;

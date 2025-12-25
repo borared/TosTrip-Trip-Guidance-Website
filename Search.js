@@ -1,16 +1,12 @@
 const searchPages = [
     {
-      keywords: ["siem reap", "angkor", "Siem reap", "Siem Reap"],
+      keywords: ["siem reap", "angkor", "Siem reap", "Siem Reap", "siem Reap"],
       url: "https://tos-trip-trip-guidance-website.vercel.app/Popular/PopularPlace/SiemReap/siemreap.html"
     },
     {
       keywords: ["capella ubud", "hotel bali"],
       url: "https://tos-trip-trip-guidance-website.vercel.app/Destinations/water/Hotel/CapellaUbud/capella.html"
     },
-    {
-      keywords: ["battambang"],
-      url: "battambang.html"
-    }
   ];
 
   const searchInput = document.getElementById("searchInput");

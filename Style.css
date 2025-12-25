@@ -23,11 +23,7 @@ body {
 .Hero {
   min-height: 100vh;
 }
-/* COMMON NAVBAR LINK STYLES */
-/* ==================================================
-1. BASE & LINK STYLES
-================================================== 
-*/
+
 .navbar a,
 .social a {
   position: relative;
@@ -52,10 +48,7 @@ body {
   width: 100%;
 }
 
-/* ==================================================
-2. NAVBAR STRUCTURE & BEHAVIOR
-================================================== 
-*/
+
 .navbar {
   position: fixed;
   top: 0;
@@ -79,7 +72,6 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* SCROLLED STATE: Black text & underline */
 .navbar.scrolled a,
 .navbar.scrolled .logo a {
   color: black !important;
@@ -94,10 +86,7 @@ body {
   background: black;
 }
 
-/* ==================================================
-3. NAVIGATION & LOGO ELEMENTS
-================================================== 
-*/
+
 .logo {
   font-size: 25px;
   font-weight: 600;
@@ -107,8 +96,6 @@ body {
 }
 .logo a:hover {
   cursor: pointer;
-  /* NOTE: The general '.navbar a:hover::after' handles the underline */
-  /* The color will be white unless scrolled */
 }
 
 .navigation {
@@ -117,15 +104,15 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: black; /* Default color for text not in <a> tags */
+  color: black; 
   flex: 1;
-  list-style: none; /* Add this if 'navigation' is a <ul> */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .navigation li {
-  position: relative; /* Essential for dropdown positioning */
+  position: relative; 
   color: white;
 }
 
@@ -142,7 +129,7 @@ body {
   color: rgba(255, 254, 254, 0.7);
 }
 
-/* SCROLLED STATE: Profile/Search icons color change */
+
 .navbar.scrolled .Profile_Search i {
   color: rgb(255, 255, 255);
 }
@@ -150,10 +137,6 @@ body {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* ==================================================
-4. SEARCH BAR
-================================================== 
-*/
 .nav-search-bar {
   position: absolute;
   right: 60px;
@@ -213,15 +196,10 @@ body {
   color: black !important;
 }
 
-/* ==================================================
-5. DROPDOWN MENU STYLES (NEW)
-================================================== 
-*/
 
-/* Container (Must be relative to the <li> parent in .navigation) */
 .dropdown-menu {
   position: absolute;
-  top: 100%; /* Position below the link */
+  top: 100%; 
   left: 50%;
   transform: translateX(-50%);
   margin-top: 6px;
@@ -231,17 +209,15 @@ body {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  display: none; /* Hidden by default */
-  z-index: 100; /* Ensure it's above other elements but below the navbar's z-index */
-  min-height: 250px; /* Adjust size */
+  display: none; 
+  z-index: 100; 
+  min-height: 250px; 
 }
 
-/* Show menu on hover over the list item */
 .navigation li:hover .dropdown-menu {
   display: block;
 }
 
-/* Menu Item Styling */
 .menu-item {
   display: flex;
   align-items: flex-start;
@@ -261,7 +237,7 @@ body {
   margin: 0;
   font-size: 0.9em;
   font-weight: 600;
-  color: #1f2937; /* Dark text for readability on white background */
+  color: #1f2937; 
 }
 
 .menu-item p {
@@ -271,7 +247,7 @@ body {
   line-height: 1.4;
 }
 
-/* Icon Placeholder Styling */
+
 .menu-item [class^="icon-"] {
   font-size: 1.5em;
   margin-right: 15px;
@@ -286,22 +262,17 @@ body {
   flex-shrink: 0;
 }
 
-/* ==================================================
-6. SCROLLED STATE: DROPDOWN MENU OVERRIDES
-================================================== 
-*/
 
-/* Ensure the dropdown colors remain correct regardless of the navbar's scrolled state */
 .navbar.scrolled .dropdown-menu a,
 .navbar.scrolled .dropdown-menu a::after,
 .navbar.scrolled .dropdown-menu h3,
 .navbar.scrolled .dropdown-menu p {
-  color: initial !important; /* Reset colors inside the dropdown */
+  color: initial !important;
   background: initial !important;
 }
 
 .navbar.scrolled .dropdown-menu a::after {
-  background: transparent !important; /* Remove underline for links inside the dropdown */
+  background: transparent !important; 
 }
 .burger input {
   position: absolute;
@@ -377,24 +348,22 @@ body {
   -o-transform: translateX(-50px);
   opacity: 0;
 }
-/* --- Sidebar Styles --- */
+
 .sidebar {
   display: block;
-  position: fixed; /* Fixes it relative to the viewport */
+  position: fixed; 
   top: 0;
-  right: 0; /* Starts off-screen on the right */
-  width: 250px; /* Adjust as needed */
+  right: 0; 
+  width: 250px; 
   height: 100%;
-  background-color: #333; /* Dark background */
+  background-color: #333; 
   padding: 20px;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  /* The key for the slide-in/out effect */
-  transform: translateX(100%); /* Moves it entirely off-screen to the right */
+  transform: translateX(100%); 
   transition: transform 0.3s ease-in-out;
-  z-index: 10; /* Make sure it appears above other content */
+  z-index: 10; 
 }
 
-/* Sidebar Navigation Styling (Optional but recommended) */
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -414,7 +383,6 @@ body {
   background-color: #555;
 }
 
-/* Submenu inside sidebar (hidden by default) */
 .sidebar-submenu {
   display: none;
   flex-direction: column;
@@ -435,11 +403,9 @@ body {
   padding: 6px 0 6px 6px;
 }
 
-/* --- Activation Logic --- */
 
-/* Selects the sidebar when the sibling checkbox is checked */
 .burger input:checked ~ .sidebar {
-  transform: translateX(0); /* Moves it to its default (on-screen) position */
+  transform: translateX(0); 
 }
 
 .Main_Content {
@@ -548,7 +514,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6366f1;
+  background-color: rgb(70, 70, 244);
   width: 120px;
   height: 35px;
   border-radius: 25px;
@@ -557,7 +523,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 8px; /* Changed from left: 81%; margin-left: 8px; for simplicity */
+  right: 8px; 
   transition: all 0.3s ease-in-out;
 }
 .searchBtn:hover {
@@ -589,16 +555,15 @@ body {
   margin-bottom: 20px;
   white-space: nowrap;
 }
-/* Carousel */
+
 .carousel-container {
   padding-left: 35px;
   padding-right: 35px;
-  overflow-x: auto; /* Allow horizontal scrolling */
+  overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
   box-sizing: border-box;
 
-  /* Hide scrollbar but keep scroll ability */
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -645,11 +610,10 @@ body {
   color: #ccc;
 }
 
-/* Subtitle */
 .subtitle-container {
   padding-left: 35px;
   padding-right: 35px;
-  overflow: hidden; /* IMPORTANT */
+  overflow: hidden; 
   width: 100%;
   box-sizing: border-box;
   background-color: white;
@@ -676,7 +640,7 @@ body {
 }
 @keyframes scrollRight {
   0% {
-    /* WARNING: Animation value is hardcoded and must be recalculated. */
+  
     transform: translateX(
       calc(-280px - 350px - 320px - 300px - 380px - 260px - 340px - 140px)
     );
@@ -686,7 +650,6 @@ body {
   }
 }
 
-/* Controls & Info */
 .carousel-controls {
   display: flex;
   justify-content: center;
@@ -805,10 +768,10 @@ body {
 .explore-btn {
   display: inline-block;
   padding: 10px 30px;
-  background-color: black;
+  background-color: rgb(60, 72, 248);
   color: white;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 11px;
   font-size: 1em;
   transition: all 0.3s ease-in-out;
 }
@@ -977,11 +940,7 @@ body {
   position: relative;
 }
 
-/* ------------------------------------------- */
-/* RESPONSIVE DESIGN (Mobile)        */
-/* ------------------------------------------- */
 
-/* MEDIA QUERIES */
 @media (max-width: 1440px) {
   .Main_Content .head_line h1 {
     font-size: 2em;

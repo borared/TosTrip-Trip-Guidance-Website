@@ -100,7 +100,6 @@ body {
   font-weight: bold;
 }
 
-/* --- CONTAINER STYLES --- */
 .slider-container {
   width: 100%;
   height: 500px;
@@ -111,19 +110,16 @@ body {
   border-radius: 15px;
 }
 
-/* The Reel that moves */
 .slider {
-  position: absolute; /* Allows it to fill the padded container */
+  position: absolute;
   top: 0;
   left: 0;
-  /* Retain original properties: */
   display: flex;
   width: 100%;
   height: 100%;
   transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
-/* Individual Slide Styling */
 .slide {
   width: 100%;
   height: 500px;
@@ -137,7 +133,6 @@ body {
   object-fit: cover;
 }
 
-/* The Letter/Caption Styling */
 .caption-letter {
   font-family: "Nunito", sans-serif;
   position: absolute;
@@ -149,7 +144,6 @@ body {
   z-index: 10;
 }
 
-/* --- PROGRESS BAR STYLES --- */
 .progress-container {
   position: absolute;
   bottom: 0;
@@ -163,7 +157,7 @@ body {
 .progress-bar {
   height: 100%;
   width: 0;
-  background-color: #007bff; /* Bright blue color */
+  background-color: #007bff;
   transform-origin: left;
 }
 
@@ -276,7 +270,6 @@ UerImg img {
   padding-right: 30px;
 }
 
-/* Keyframe Definition */
 @keyframes loadProgress {
   from {
     width: 0%;
@@ -286,7 +279,6 @@ UerImg img {
   }
 }
 
-/* Class applied by JS to start the animation */
 .progress-animate {
   animation: loadProgress 8s linear forwards;
 }
@@ -318,7 +310,7 @@ UerImg img {
   .headCategoryOutdoor h1 {
     font-size: 22px;
   }
-  h1{
+  h1 {
     font-size: 23px;
   }
   .hotel {
@@ -451,30 +443,28 @@ UerImg img {
   .tour-grid {
     grid-template-columns: 1fr;
   }
-  #userWord{
+  #userWord {
     display: none;
   }
-  .fullReview{
+  .fullReview {
     display: none;
-   
   }
   .UserExp {
     margin-top: 2000px;
   }
-  .headCategoryOutdoor h1{
+  .headCategoryOutdoor h1 {
     font-size: 18px;
   }
-  .outdoor-hero-content h3{
+  .outdoor-hero-content h3 {
     font-size: 17px;
   }
-  
+
   .outdoor-hero-content {
     margin-top: -50px;
     padding-right: 15px;
     padding-left: 20px;
   }
-  .outdoor-hero-content p{
+  .outdoor-hero-content p {
     font-size: 13px;
   }
-
 }
