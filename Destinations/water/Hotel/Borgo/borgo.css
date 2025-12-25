@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white; /* Bright green color */
+    background-color: #4b32f0; /* Bright green color */
     font-size: 18px;
     font-weight: 400;
     padding: 12px 25px;

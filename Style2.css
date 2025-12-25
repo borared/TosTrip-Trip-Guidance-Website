@@ -412,6 +412,7 @@
   background-position: center;
   position: relative;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .iconic-large .iconic-image {
   background-image: url("https://res.cloudinary.com/dicrvjstp/image/upload/v1765884274/15-Iconic-Places-in-the-World_Eiffel-Tower-Paris-France_rh2010_Adobe-Stock-Photo_lgydnh.jpg");
@@ -436,6 +437,17 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  
+}
+.right-column .iconic-image:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.iconic-large .iconic-image:hover{
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .bottom-right-grid {

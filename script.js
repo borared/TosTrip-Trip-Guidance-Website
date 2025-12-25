@@ -20,25 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Close sidebar when clicking outside
+  // Close sidebar
   const burgerCheckbox = document.querySelector(".burger input");
   const sidebar = document.querySelector(".sidebar");
 
   document.addEventListener("click", (e) => {
-    // If click is outside burger and sidebar, close the sidebar
+    
     if (!e.target.closest(".burger") && !e.target.closest(".sidebar")) {
       if (burgerCheckbox) burgerCheckbox.checked = false;
-      // also close any open submenu
+      
       document
         .querySelectorAll(".sidebar-item.open")
         .forEach((i) => i.classList.remove("open"));
     }
   });
 
-  // Toggle sidebar Destination submenu
+ 
   document.querySelectorAll(".toggle-destination").forEach((btn) => {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
       const li = btn.closest(".sidebar-item");
       if (!li) return;
       li.classList.toggle("open");

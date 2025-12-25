@@ -465,7 +465,6 @@
   .popular-scroll-area {
     overflow-x: auto;
     padding-bottom: 20px;
-    /* Hides the scrollbar on some browsers but keeps functionality */
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
@@ -551,7 +550,6 @@
   }
 
   .popular-item {
-    /* Calculate width for 3 columns with space-between behavior */
     width: calc(33.33% - 14px);
     margin-bottom: 20px;
   }
