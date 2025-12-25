@@ -496,7 +496,7 @@ body {
   width: fit-content;
 }
 .search h1 {
-  font-family: "Rosemartin", sans-serif;
+  font-family: "Rosemartin Custom", sans-serif;
   font-weight: 500;
   margin-left: 150px;
 }
@@ -1158,6 +1158,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  .social {
+    gap: 15px;
+  }
   .btText {
     margin-top: 30px;
   }
