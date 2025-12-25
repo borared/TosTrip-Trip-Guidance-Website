@@ -97,12 +97,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4b32f0; /* Bright green color */
+    background-color: #4b32f0;
+    color: white;
     font-size: 18px;
     font-weight: 400;
     padding: 12px 25px;
     border: none;
-    border-radius: 50px; /* Highly rounded corners */
+    border-radius: 50px; 
     cursor: pointer;
     transition: background-color 0.3s;
     height: 35px;
@@ -132,7 +133,6 @@ body {
 
 .photo-video-grid {
     display: grid;
-    /* Define the grid columns: 70% for main, 30% for sidebar on large screens */
     grid-template-columns: 70% 30%;
     max-width: 100%;
     margin: 20px auto;
@@ -141,12 +141,10 @@ body {
     margin-top: 50px;
 }
 
-/* --- Main Image Container (Left/Top) --- */
 .main-image-container {
     position: relative;
     overflow: hidden;
-    /* Ensure the main image container has a consistent height on desktop for visual balance */
-    min-height: 400px; /* Adjust as needed */
+    min-height: 400px; 
 }
 
 .main-image {
@@ -168,13 +166,12 @@ body {
     align-items: center;
 }
 
-/* --- Sidebar Thumbnails (Right/Bottom) --- */
+
 .sidebar-thumbnails {
     display: grid;
-    /* Sidebar has three equally sized rows */
     grid-template-rows: repeat(3, 1fr);
     gap: 5px;
-    min-height: 200px; /* Match the height of the main container */
+    min-height: 200px; 
     overflow: hidden;
 }
 
@@ -189,7 +186,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-    /* Optional hover effect */
     transition: transform 0.3s ease;
 }
 
@@ -208,7 +204,6 @@ body {
     justify-content: space-between;
     align-items: center;
     color: white;
-    /* Gradient for better text readability, similar to the image */
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
@@ -222,7 +217,6 @@ body {
     font-weight: bold;
 }
 
-/* --- PRICE COMPARISON SECTION --- */
 .price-travel-container {
     max-width: 100%;
     margin: 20px auto;
@@ -239,7 +233,6 @@ body {
     color: #004d40;
     margin-bottom: 25px;
 }
-
 
 
 .special-offer-box {
@@ -352,7 +345,7 @@ body {
     margin-top: 20px;
 }
 
-* --- REVIEWS SECTION --- */
+
 .review-summary-container {
     max-width: 100%;
     margin: 20px auto;
@@ -543,33 +536,27 @@ body {
 .relavent{
     margin-top: 70px;
 }
-/* ------------------------------------------- */
-/* RESPONSIVE DESIGN (Mobile)        */
-/* ------------------------------------------- */
+
 
 @media (max-width: 768px) {
   .photo-video-grid {
-    /* On smaller screens, stack the items vertically */
-    grid-template-columns: 1fr; /* Single column */
-    gap: 10px; /* Increase gap for clarity when stacking */
+    grid-template-columns: 1fr; 
+    gap: 10px; 
     margin: 10px;
   }
 
   .main-image-container {
-    /* Adjust height for mobile view, making it taller than the sidebar total */
     min-height: 250px;
   }
 
   .sidebar-thumbnails {
-    /* When stacked, the sidebar items should just fill their content width, not a fixed height */
     grid-template-rows: repeat(
       3,
       150px
-    ); /* Give each thumbnail a fixed height for mobile */
+    ); 
     min-height: auto;
   }
 
-  /* Optional: Ensure thumbnail overlays look good on smaller screens */
   .thumbnail-overlay {
     padding: 8px 12px;
   }
