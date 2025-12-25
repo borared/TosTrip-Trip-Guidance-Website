@@ -414,6 +414,27 @@ body {
   background-color: #555;
 }
 
+/* Submenu inside sidebar (hidden by default) */
+.sidebar-submenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 8px;
+  margin-top: 8px;
+}
+.sidebar-item.open > .sidebar-submenu {
+  display: flex;
+}
+.toggle-destination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.sidebar-submenu a {
+  color: #fff;
+  padding: 6px 0 6px 6px;
+}
+
 /* --- Activation Logic --- */
 
 /* Selects the sidebar when the sibling checkbox is checked */

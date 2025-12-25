@@ -1,27 +1,47 @@
-const searchIcon = document.getElementById("searchToggle");
-const searchBar = document.getElementById("navSearchBar");
-const carouselTrack = document.querySelector(".carousel-track");
+document.addEventListener("DOMContentLoaded", () => {
+  const searchIcon = document.getElementById("searchToggle");
+  const searchBar = document.getElementById("navSearchBar");
+  const carouselTrack = document.querySelector(".carousel-track");
 
-searchIcon.addEventListener("click", () => {
-  searchBar.classList.toggle("active");
-  searchIcon.classList.toggle("is-active");
-});
-
-carouselTrack.addEventListener("mouseenter", () => {
-  carouselTrack.style.animationPlayState = "paused";
-});
-
-carouselTrack.addEventListener("mouseleave", () => {
-  carouselTrack.style.animationPlayState = "running";
-});
-
-// Close sidebar when clicking outside
-const burgerCheckbox = document.querySelector(".burger input");
-const sidebar = document.querySelector(".sidebar");
-
-document.addEventListener("click", (e) => {
-  // If click is outside burger and sidebar, close the sidebar
-  if (!e.target.closest(".burger") && !e.target.closest(".sidebar")) {
-    burgerCheckbox.checked = false;
+  if (searchIcon && searchBar) {
+    searchIcon.addEventListener("click", () => {
+      searchBar.classList.toggle("active");
+      searchIcon.classList.toggle("is-active");
+    });
   }
+
+  if (carouselTrack) {
+    carouselTrack.addEventListener("mouseenter", () => {
+      carouselTrack.style.animationPlayState = "paused";
+    });
+
+    carouselTrack.addEventListener("mouseleave", () => {
+      carouselTrack.style.animationPlayState = "running";
+    });
+  }
+
+  // Close sidebar when clicking outside
+  const burgerCheckbox = document.querySelector(".burger input");
+  const sidebar = document.querySelector(".sidebar");
+
+  document.addEventListener("click", (e) => {
+    // If click is outside burger and sidebar, close the sidebar
+    if (!e.target.closest(".burger") && !e.target.closest(".sidebar")) {
+      if (burgerCheckbox) burgerCheckbox.checked = false;
+      // also close any open submenu
+      document
+        .querySelectorAll(".sidebar-item.open")
+        .forEach((i) => i.classList.remove("open"));
+    }
+  });
+
+  // Toggle sidebar Destination submenu
+  document.querySelectorAll(".toggle-destination").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const li = btn.closest(".sidebar-item");
+      if (!li) return;
+      li.classList.toggle("open");
+    });
+  });
 });
