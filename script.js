@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchIcon = document.getElementById("searchToggle");
   const searchBar = document.getElementById("navSearchBar");
-  const carouselTrack = document.querySelector(".carousel-track");
 
   if (searchIcon && searchBar) {
     searchIcon.addEventListener("click", () => {
@@ -10,15 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (carouselTrack) {
-    carouselTrack.addEventListener("mouseenter", () => {
-      carouselTrack.style.animationPlayState = "paused";
-    });
-
-    carouselTrack.addEventListener("mouseleave", () => {
-      carouselTrack.style.animationPlayState = "running";
-    });
-  }
 
   // Close sidebar
   const burgerCheckbox = document.querySelector(".burger input");
