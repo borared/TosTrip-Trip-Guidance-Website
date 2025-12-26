@@ -634,7 +634,7 @@ body {
 @keyframes scrollRight {
   0% {
     transform: translateX(
-      calc(-280px - 350px - 320px - 300px - 380px - 260px - 340px - 140px)
+      calc(-2370px)
     );
   }
   100% {
